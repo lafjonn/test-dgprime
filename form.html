@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__menu">
+          <a class="header__logo"></a>
+          <a class="header__dropdown-btn  header__dropdown-btn--close"></a>
+        </div>
+        <ul class="header__menu-list">
+          <li class="header__list-item">
+            <a class="header__menu-link" href="#">Главная</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__menu-link" href="#">Фотографии</a>
+          </li>
+          <li class="header__list-item  header__list-item--active">
+            <a class="header__menu-link  header__menu-link--current" href="#">Конкурс</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__menu-link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="images  images--small">
+        <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </header>
+    <div class="contest">
+      <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form class="contest__form">
+        <label class="contest__label" for="surname">Фамилия:</label>
+        <input class="contest__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+        <label class="contest__label" for="name">Имя:</label>
+        <input class="contest__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+        <label class="contest__label" for="father-name">Отчество:</label>
+        <input class="contest__input" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже">
+        <div class="contest__check-section">
+          <p class="contest__check-decription">Ваши безбашенные достижения в путешествии</p>
+          <input class="contest__checkbox" type="checkbox" name="shark-selfie" id="shark-selfie">
+          <label for="shark-selfie">Сделал селфи с акулой</label>
+          <input class="contest__checkbox" type="checkbox" name="sunburn" id="sunburn">
+          <label for="sunburn">Сделал селфи с акулой</label>
+          <input class="contest__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+          <label for="chuck-norris">Видел Чака Норриса</label>
+          <input class="contest__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+          <label for="souvenirs">Накупил сувениров</label>
+          <input class="contest__checkbox" type="checkbox" name="tower" id="tower">
+          <label for="tower">Удержал башню</label>
+          <input class="contest__checkbox" type="checkbox" name="hotel-crush" id="hotel-crush">
+          <label for="hotel-crush">Разгромил отель</label>
+        </div>
+        <div class="contest__user-contacts">
+          <label class="contest__label" for="phone">Номер телефона</label>
+          <input class="contest__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+          <label class="contest__label" for="email">Адрес почты</label>
+          <input class="contest__input" type="text" name="email" id="email" placeholder="Введите почту *">
+        </div>
+        <div class="contest__check-section">
+         <p class="contest__subtitle">С каким приложением путешествовали?</p>
+          <input class="contest__radio" type="radio" name="phone-os" id="ios" checked>
+          <label for="ios">Pink для iOS</label>
+          <input class="contest__radio" type="radio" name="phone-os" id="android">
+          <label for="android">Pink на Android</label>
+          <input class="contest__tadio" type="radio" name="phone-os" id="win-phone">
+          <label for="win-phone">Windows Phone</label>
+        </div>
+        <p class="contest__subtitle">Опишите свои эмоции</p>
+        <textarea class="contest__experience" id="experience" name="experience" cols="30" rows="8" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <input class="contest__btn  btn  btn--green" type="submit">Отправить форму</input>
+        <p class="contest__note">
+          <span class="contest__note-special">*</span> — обязательные поля
+        </p>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer__logo"></div>
+      <div class="footer__social  social">
+        <a class="social__twitter" href="#">Twitter</a>
+        <a class="social__facebook" href="#">Facebook</a>
+        <a class="social__youtube" href="#">Youtube</a>
+      </div>
+      <div class="footer__copyright  copyright">
+        <span class="copyright__label">Разработано</span>
+        <a class="copyright__logo" href="https://htmlacademy.ru/">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
