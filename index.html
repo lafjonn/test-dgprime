@@ -5,8 +5,150 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__menu">
+          <a class="header__logo">
+            <img class="header__logo-image" src="http://placehold.it/75x22">
+          </a>
+          <button class="header__dropdown-btn  header__dropdown-btn--close"></button>
+        </div>
+        <ul class="header__menu-list">
+          <li class="header__list-item  header__list-item--active">
+            <a class="header__menu-link  header__menu-link--current" href="#">Главная</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__menu-link" href="#">Фотографии</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__menu-link" href="#">Конкурс</a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__menu-link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="images">
+        <div class="images__hand"></div>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <div class="content">
+      <div class="download">
+        <a class="download__btn btn">Скачать приложение</a>
+        <div class="download__phone-os">
+          <a class="download__iphone" href="#"></a>
+          <a class="download__android" href="#"></a>
+          <a class="download__win-phone" href="#"></a>
+        </div>
+        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
 
+      <div class="features">
+        <div class="features__header">
+          <p class="features__caption">Устали от серости мегаполиса?</p>
+          <p class="features__caption">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="feature">
+          <span class="feature__title">Поднимает настроение</span>
+          <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="feature">
+          <span class="feature__title">Меняет мир вокруг</span>
+          <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="feature">
+          <span class="feature__title">Заводит новых друзей</span>
+          <p class="feature__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+        <div class="features__iphone"></div>
+      </div>
+
+      <div class="slider">
+        <input type="radio" id="review-1" name="toggle" checked>
+        <input type="radio" id="review-2" name="toggle">
+        <input type="radio" id="review-3" name="toggle">
+        <div class="slider__controls">
+          <label class="slider__label" for="review-1"></label>
+          <label class="slider__label" for="review-2"></label>
+          <label class="slider__label" for="review-3"></label>
+        </div>
+        <div class="slider__slides-block">
+          <div class="slider__item  review  review--1">
+            <span class="review__name">Николай Петров</span>
+            <blockquote class="review__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+          </div>
+          <div class="slider__item  review  review--2">
+            <span class="review__name"></span>
+            <blockquote class="review__quote"></blockquote>
+          </div>
+          <div class="slider__item  review  review--3">
+            <span class="review__name"></span>
+            <blockquote class="review__quote"></blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="tariff">
+        <table class="tariff__table">
+          <tr>
+            <th class="tariff__heading">
+              <span class="tariff__title">Стандарт</span>
+              <span class="tariff__price">3,99 USD</span>
+              <div class="tariff__hit"></div>
+            </th>
+          </tr>
+          <tr>
+            <td class="tariff__section">
+              <span class="tariff__option">Розовый фильтр</span>
+              <span class="tariff__avaliability  tariff__avaliability--yes">Да</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="tariff__section">
+              <span class="tariff__option">Смайлики</span>
+              <span class="tariff__avaliability  tariff__avaliability--yes">Да</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="tariff__section">
+              <span class="tariff__option">Комментарии</span>
+              <span class="tariff__avaliability  tariff__avaliability--no">Нет</span>
+            </td>
+          </tr>
+        </table>
+        <div class="tariff__slider">
+          <input type="radio" id="section-1" name="toggle">
+          <input type="radio" id="section-2" name="toggle" checked>
+          <input type="radio" id="section-3" name="toggle">
+          <div class="tariff__controls">
+            <label class="tariff__label" for="section-1"></label>
+            <label class="tariff__label" for="section-2"></label>
+            <label class="tariff__label" for="section-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__item">
+          <span class="contacts__type">Звоните:</span>
+          <span class="contacts__info">+7 (812) 555-66-66</span>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__type">Пишите:</span>
+          <span class="contacts__info">mail@htmlacademy.ru</span>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__type">Приезжайте в гости:</span>
+          <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="map"></div>
+      </footer>
+
+    </div>
   </body>
 </html>
