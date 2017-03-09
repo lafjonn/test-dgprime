@@ -1,0 +1,40 @@
+.download {
+  background-color: $darkblue;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.download__btn {
+  padding: 15px 25px;
+}
+
+.download__phone-os {
+  height: 110px;
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download__phone {
+  height: 45px;
+  width: 50px;
+  align-self: center;
+
+  &--android {
+    padding-top: 15px;
+  }
+
+  &--winphone {
+    padding-top: 20px;
+  }
+}
+
+.download__description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $white;
+  width: 240px;
+}

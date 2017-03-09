@@ -1,0 +1,21 @@
+.feature {
+  text-align: center;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.feature__title {
+  font-size: 18px;
+  font-weight: 700;
+  width: 275px;
+}
+
+.feature__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: $darkgrey;
+  width: 275px;
+}

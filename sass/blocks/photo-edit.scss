@@ -1,0 +1,66 @@
+.photo-edit {
+  background-color: $lightgrey;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.photo-edit__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-edit__img {
+  width: 280px;
+  margin: auto;
+}
+
+.photo-edit__icons {
+  width: 198px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $pink;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.photo-edit__scale {
+  width: 240px;
+  height: 2px;
+  background-color: $darkblue;
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.photo-edit__range {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: $lightgrey;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  top: -6px;
+  left: 70%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.photo-edit__border {
+  min-width: 320px;
+  height: 1px;
+  background-color: $grey;
+  margin-bottom: 30px;
+}
+
+.photo-edit__btn {
+  width: 280px;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+

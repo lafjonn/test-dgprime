@@ -1,0 +1,26 @@
+.features {
+  background-color: $lightgrey;
+}
+
+.features__header {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding-top: 30px;
+}
+
+.features__caption {
+  font-size: 24px;
+  font-weight: 300;
+  color: $darkgrey;
+  text-align: center;
+  margin: 15px;
+}
+
+.features__iphone {
+  height: 280px;
+  background-image: url(../../img/iphone-screen-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}

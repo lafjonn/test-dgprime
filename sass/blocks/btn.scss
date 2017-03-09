@@ -1,0 +1,21 @@
+.btn {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 15px 25px;
+  cursor: pointer;
+
+  &--white {
+    @include btn($white);
+  }
+
+  &--pink {
+    @include btn($pink);
+  }
+
+  &--grey {
+    @include btn($grey);
+  }
+}
