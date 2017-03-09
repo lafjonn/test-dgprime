@@ -3,43 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header__wrapper">
         <div class="header__menu">
           <a class="header__logo">
-            <img class="header__logo-image" src="http://placehold.it/75x22">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg">
           </a>
-          <button class="header__dropdown-btn  header__dropdown-btn--close"></button>
+          <button class="header__dropdown-btn  header__dropdown-btn--close">Меню</button>
         </div>
         <ul class="header__menu-list">
           <li class="header__list-item  header__list-item--active">
             <a class="header__menu-link  header__menu-link--current" href="#">Главная</a>
           </li>
           <li class="header__list-item">
-            <a class="header__menu-link" href="#">Фотографии</a>
+            <a class="header__menu-link" href="photo.html">Фотографии</a>
           </li>
           <li class="header__list-item">
-            <a class="header__menu-link" href="#">Конкурс</a>
+            <a class="header__menu-link" href="form.html">Конкурс</a>
           </li>
           <li class="header__list-item">
             <a class="header__menu-link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
-      <div class="images">
-        <div class="images__hand"></div>
+      <div class="header__images">
+        <div class="header__images-hand"></div>
       </div>
     </header>
 
     <div class="content">
       <div class="download">
-        <a class="download__btn btn">Скачать приложение</a>
+        <a class="download__btn btn  btn--white">Скачать приложение</a>
         <div class="download__phone-os">
-          <a class="download__iphone" href="#"></a>
-          <a class="download__android" href="#"></a>
-          <a class="download__win-phone" href="#"></a>
+          <a class="download__phone  download__phone--iphone" href="#">
+            <img src="img/logo-apple.svg" alt="Iphone">
+          </a>
+          <a class="download__phone  download__phone--android" href="#">
+            <img src="img/logo-android.svg" alt="Android">
+          </a>
+          <a class="download__phone  download__phone--winphone" href="#">
+            <img src="img/logo-microsoft.svg" alt="Windows Phone">
+          </a>
         </div>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
@@ -65,9 +72,9 @@
       </div>
 
       <div class="slider">
-        <input type="radio" id="review-1" name="toggle" checked>
-        <input type="radio" id="review-2" name="toggle">
-        <input type="radio" id="review-3" name="toggle">
+        <input class="slider__input" type="radio" id="review-1" name="toggle" checked>
+        <input class="slider__input" type="radio" id="review-2" name="toggle">
+        <input class="slider__input" type="radio" id="review-3" name="toggle">
         <div class="slider__controls">
           <label class="slider__label" for="review-1"></label>
           <label class="slider__label" for="review-2"></label>
@@ -146,7 +153,10 @@
       </div>
 
       <footer class="footer">
-        <div class="map"></div>
+        <div class="map">
+          <div class="map__mask"></div>
+          <div class="map__marker"></div>
+        </div>
       </footer>
 
     </div>

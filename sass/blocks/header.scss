@@ -1,0 +1,68 @@
+.header {
+  background-color: $darkblue;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.header__menu-list {
+  @include menu();
+  display: flex;
+  flex-direction: column;
+}
+
+.header__dropdown-btn {
+  width: 20px;
+  height: 20px;
+  font-size: 0px;
+}
+
+.header__list-item {
+  border-top: 1px solid #475360;
+  border-bottom: 1px solid #000001;
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.header__menu-link {
+  @include link($white);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.header__images {
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  height: 396px;
+  background-position: center;
+  &--small {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.header__page-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: $white;
+  text-align: center;
+  width: 240px;
+}
+
+.header__images-hand {
+  background-image: url(../../img/iphone-hand-mobile.png);
+  background-repeat: no-repeat;
+  height: 396px;
+  background-position: bottom center;
+}

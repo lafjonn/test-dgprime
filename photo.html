@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header__wrapper">
         <div class="header__menu">
           <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="http://placehold.it/75x22">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg">
           </a>
           <button class="header__dropdown-btn  header__dropdown-btn--close"></button>
         </div>
@@ -21,15 +22,15 @@
             <a class="header__menu-link  header__menu-link--current" href="#">Фотографии</a>
           </li>
           <li class="header__list-item">
-            <a class="header__menu-link" href="#">Конкурс</a>
+            <a class="header__menu-link" href="form.html">Конкурс</a>
           </li>
           <li class="header__list-item">
             <a class="header__menu-link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
-      <div class="images  images--small">
-        <h1 class="page-title">Фотографии пользователей</h1>
+      <div class="header__images  header__images--small">
+        <h1 class="header__page-title">Фотографии пользователей</h1>
       </div>
     </header>
 
@@ -38,10 +39,13 @@
         <p class="photo-page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
         <div class="post  post--main">
-          <img class="post__img  post__img--main" src="http://placehold.it/320x137">
+          <img class="post__img  post__img--main" src="img/panorama-mobile@1x.jpg">
           <div class="post__text">
             <span class="post__username">Анна</span>
-            <span class="post__time">(5 минут назад)</span>
+            <span class="post__time">
+              <span class="post__half">(</span>5 минут назад
+              <span class="post__half">)</span>
+            </span>
             <p class="post__usertext">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <button class="post__add-like"></button>
             <span class="post__like">Нравится:</span>
@@ -50,10 +54,13 @@
         </div>
 
         <div class="post">
-          <img class="post__img" src="http://placehold.it/280x180">
+          <img class="post__img" src="img/photo-1-mobile@1x.jpg">
           <div class="post__text">
             <span class="post__username">Левон</span>
-            <span class="post__time">(5 часов назад)</span>
+            <span class="post__time">
+              <span class="post__half">(</span>5 часов назад
+              <span class="post__half">)</span>
+            </span>
             <p class="post__usertext">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <button class="post__add-like"></button>
             <span class="post__like">Нравится:</span>
@@ -62,10 +69,13 @@
         </div>
 
         <div class="post">
-          <img class="post__img" src="http://placehold.it/280x180">
+          <img class="post__img" src="img/photo-2-mobile@1x.jpg">
           <div class="post__text">
             <span class="post__username">Антон</span>
-            <span class="post__time">(12 часов назад)</span>
+            <span class="post__time">
+              <span class="post__half">(</span>12 часов назад
+              <span class="post__half">)</span>
+            </span>
             <p class="post__usertext">Соседи будут рады!</p>
             <button class="post__add-like"></button>
             <span class="post__like">Нравится:</span>
@@ -74,10 +84,13 @@
         </div>
 
         <div class="post">
-          <img class="post__img" src="http://placehold.it/280x180">
+          <img class="post__img" src="img/photo-3-mobile@1x.jpg">
           <div class="post__text">
             <span class="post__username">Борис</span>
-            <span class="post__time">(20 часов назад)</span>
+            <span class="post__time">
+              <span class="post__half">(</span>20 часов назад
+              <span class="post__half">)</span>
+            </span>
             <p class="post__usertext">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <button class="post__add-like"></button>
             <span class="post__like">Нравится:</span>
@@ -86,10 +99,13 @@
         </div>
 
         <div class="post">
-          <img class="post__img" src="http://placehold.it/280x180">
+          <img class="post__img" src="img/photo-4-mobile@1x.jpg">
           <div class="post__text">
             <span class="post__username">Сергей</span>
-            <span class="post__time">(25 часов назад)</span>
+            <span class="post__time">
+              <span class="post__half">(</span>25 часов назад
+              <span class="post__half">)</span>
+            </span>
             <p class="post__usertext">Самая кубанская в мире!</p>
             <button class="post__add-like"></button>
             <span class="post__like">Нравится:</span>
@@ -98,10 +114,13 @@
         </div>
 
         <div class="post">
-          <img class="post__img" src="http://placehold.it/280x180">
+          <img class="post__img" src="img/photo-5-mobile@1x.jpg">
           <div class="post__text">
             <span class="post__username">Максим</span>
-            <span class="post__time">(40 часов назад)</span>
+            <span class="post__time">
+              <span class="post__half">(</span>40 часов назад
+              <span class="post__half">)</span>
+            </span>
             <p class="post__usertext">Где снег-то?</p>
             <button class="post__add-like"></button>
             <span class="post__like">Нравится:</span>
@@ -110,29 +129,35 @@
         </div>
 
         <div class="post">
-          <img class="post__img" src="http://placehold.it/280x180">
+          <img class="post__img" src="img/photo-6-mobile@1x.jpg">
           <div class="post__text">
             <span class="post__username">Надежда</span>
-            <span class="post__time">(45 часов назад)</span>
+            <span class="post__time">
+              <span class="post__half">(</span>45 часов назад
+              <span class="post__half">)</span>
+            </span>
             <p class="post__usertext">Всем GM и взаимные лайки!</p>
             <button class="post__add-like"></button>
             <span class="post__like">Нравится:</span>
             <span class="post__like-count">2560</span>
           </div>
         </div>
+        <p class="photo-page__description">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
 
         <div class="photo-edit">
           <form class="photo-edit__form" action="form" method="post">
-            <img class="photo-edit__img" src="http://placehold.it/280x374">
+            <img class="photo-edit__img" src="img/photo-7-mobile@1x.jpg">
             <div class="photo-edit__icons">
               <div class="photo-edit__icon  photo-edit__icon--crop"></div>
               <div class="photo-edit__icon  photo-edit__icon--fill"></div>
               <div class="photo-edit__icon  photo-edit__icon--contrast"></div>
             </div>
-            <div class="photo-edit__scale"></div>
-            <div class="photo-edit__range"></div>
-            <input class="photo-edit__btn  btn  btn--send" type="submit">Запостить</input>
-            <input class="photo-edit__btn  btn  btn--cancel" type="reset">Отмена</input>
+            <div class="photo-edit__scale">
+              <div class="photo-edit__range"></div>
+            </div>
+            <div class="photo-edit__border"></div>
+            <input class="photo-edit__btn  btn  btn--pink" type="submit" value="Запостить">
+            <input class="photo-edit__btn  btn  btn--grey" type="reset" value="Отмена">
           </form>
         </div>
       </div>
@@ -140,7 +165,7 @@
 
     <footer class="footer">
       <a class="footer__logo" href="index.html">
-        <img class="header__logo-image" src="http://placehold.it/147x40">
+        <img class="header__logo-image" src="img/logotype-blue-tablet-svg.png">
       </a>
       <div class="footer__social  social">
         <a class="social__icon  social__icon--twitter" href="#">Twitter</a>
@@ -149,7 +174,9 @@
       </div>
       <div class="footer__copyright  copyright">
         <span class="copyright__label">Разработано</span>
-        <a class="copyright__logo" href="https://htmlacademy.ru/">HTML Academy</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/">
+          <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>

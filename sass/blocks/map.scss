@@ -1,0 +1,24 @@
+.map {
+  height: 200px;
+  background-image: url(../../img/bg-map-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+.map__mask {
+  height: 200px;
+  background-image: url(../../img/map-mask.png);
+  background-repeat: no-repeat;
+  background-position: 0 -90px;
+}
+
+.map__marker {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../img/icon-map-marker.svg);
+  background-repeat: no-repeat;
+  left: 45%;
+  top: 46%;
+}
