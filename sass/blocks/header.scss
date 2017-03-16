@@ -1,12 +1,15 @@
 .header {
   background-color: $darkblue;
+  position: relative;
+}
+
+.header__logo-image {
+  display: none;
 }
 
 .header__menu {
   display: flex;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 22px;
   padding-bottom: 22px;
 }
@@ -43,6 +46,7 @@
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   height: 396px;
   background-position: center;
+  display: flex;
   &--small {
     height: 170px;
     display: flex;
@@ -63,6 +67,117 @@
 .header__images-hand {
   background-image: url(../../img/iphone-hand-mobile.png);
   background-repeat: no-repeat;
+  width: 320px;
   height: 396px;
   background-position: bottom center;
+}
+
+.header__slogan {
+  display: none;
+  width: 186px;
+  height: 126px;
+  font-size: 40px;
+  font-weight: 300;
+  color: $white;
+  text-align: center;
+  width: 240px;
+}
+
+@media #{$mobile-only} {
+
+  .header__logo-image--mobile {
+    display: block;
+  }
+
+}
+
+@media #{$tablet} {
+
+  .header__images {
+    height: 617px;
+    background-image: url(../../img/back-tablet-1x.png);
+    background-position: 50% 25%;
+  }
+
+  .header__page-title {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .header__page-title--photo {
+    width: 350px;
+  }
+
+  .header__page-title--contest {
+    width: 500px;
+  }
+
+  .header__images--small {
+    height: 330px;
+  }
+
+}
+
+@media #{$tablet-only} {
+
+  .header__slogan {
+    display: block;
+    padding-left: 98px;
+    padding-top: 100px;
+  }
+
+  .header__images-hand {
+    background-position: bottom right;
+  }
+
+  .header__logo-image--tablet {
+    display: block;
+  }
+
+}
+
+@media #{$desktop} {
+
+  .header__slogan {
+    display: block;
+    padding-left: 164px;
+    padding-top: 164px;
+  }
+
+  .header__images {
+    background-image: url(../../img/back-desktop-jpg.png);
+    height: 746px;
+  }
+
+  .header__logo-image--desktop {
+    display: block;
+  }
+
+  .header__menu-list {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+
+  .header__menu {
+    width: 400px;
+  }
+
+  .header__dropdown-btn {
+    display: none;
+  }
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__menu-link {
+    text-transform: none;
+  }
+
+  .header__page-title--contest {
+    width: 780px;
+  }
+
 }

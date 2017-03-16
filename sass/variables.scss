@@ -12,3 +12,10 @@ $pink: #d22856;
 /* ~~~~ Font ~~~~ */
 
 $font: "Open Sans", "Arial", sans-serif;
+
+/* ~~~~ Media ~~~~ */
+
+$mobile-only: "(max-width: 700px)";
+$tablet: "(min-width: 700px)";
+$tablet-only: "(min-width: 700px) and (max-width: 1100px)";
+$desktop: "(min-width: 1100px)";

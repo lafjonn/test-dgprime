@@ -1,28 +1,37 @@
 .tariff {
   background-color: $lightgrey;
-  padding-left: 16px;
   padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .tariff__table {
-  background-color: $white;
+  border: none;
+  margin: 0 auto;
 }
 
 .tariff__heading {
   background-color: $darkblue;
   color: $white;
-  display: flex;
-  flex-direction: column;
   line-height: 30px;
   width: 280px;
   min-height: 98px;
-  justify-content: center;
+  &--base,
+  &--unlim {
+    display: none;
+  }
+}
+
+.tariff__empty-cell {
+  background-color: $lightgrey;
+  border: none;
+  padding: 0;
 }
 
 .tariff__title {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  display: block;
 }
 
 .tariff__price {
@@ -32,12 +41,24 @@
 
 .tariff__section {
   height: 63px;
-  display: flex;
-  justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
   box-shadow: 0 0 0 2px $lightgrey;
+  background-color: $white;
+  &--base,
+  &--unlim {
+    display: none;
+  }
+}
+
+.tariff__section--feature,
+.tariff__empty-cell {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $darkgrey;
 }
 
 .tariff__option {
@@ -50,5 +71,43 @@
 .tariff__slider {
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+}
+
+@media #{$tablet} {
+
+  .tariff__section--feature,
+  .tariff__empty-cell {
+    display: table-cell;
+    width: 155px;
+    box-sizing: border-box;
+  }
+
+  .tariff__option,
+  .tariff__slider {
+    display: none;
+  }
+
+  .tariff__section,
+  .tariff__heading {
+    width: 155px;
+    box-sizing: border-box;
+  }
+
+  .tariff__heading--base,
+  .tariff__heading--unlim,
+  .tariff__section--base,
+  .tariff__section--unlim {
+    display: table-cell;
+  }
+
+}
+
+@media #{$desktop} {
+
+  .tariff__section--feature,
+  .tariff__section,
+  .tariff__heading {
+    width: 235px;
+  }
+
 }

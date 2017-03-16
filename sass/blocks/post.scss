@@ -6,7 +6,7 @@
 }
 
 .post__text {
-  margin-left: 20px;
+  margin: 0 auto;
   margin-top: -5px;
   width: 280px;
   box-sizing: border-box;
@@ -16,7 +16,9 @@
   text-align: left;
   padding-left: 20px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .post__username {
@@ -55,10 +57,91 @@
   color: $pink;
 }
 
-.post__like-count {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: $pink;
+@media #{$tablet} {
+
+  .post--small {
+    width: 300px;
+  }
+
+  .post__main {
+    width: 100%;
+  }
+
+  .post__img--main {
+    width: 700px;
+    height: 509px;
+  }
+
+  .post__img--small {
+    width: 300px;
+  }
+
+  .post--small:nth-child(odd) {
+    padding-right: 20px;
+  }
+
+  .post__text--main {
+    width: 620px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+
+  .post__text--small {
+    min-height: 155px;
+    width: 300px;
+  }
+
+  .post__usertext {
+    flex-basis: 100%;
+  }
+
+  .post__usertext--main {
+    order: 1;
+  }
+
+  .post__like-block {
+    display: flex;
+    justify-content: space-between;
+
+    &--main {
+      flex-basis:auto;
+      width: 120px;
+    }
+
+    &--short {
+      flex-basis: 100%;
+    }
+
+  }
+
+  .post__add-like {
+    order: 1;
+  }
+
+}
+
+@media #{$desktop} {
+
+  .post--small:nth-child(odd) {
+    padding-right: 0;
+  }
+
+  .post--small {
+    padding-left: 20px;
+  }
+
+  .post--small:nth-child(3n) {
+    padding-left: 0;
+  }
+
+  .post__text--main {
+    width: 940px;
+  }
+
+  .post__img--main {
+    width: 1100px;
+  }
+
 }

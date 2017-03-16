@@ -2,10 +2,23 @@
   @include center();
   flex-direction: column;
   padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .footer__social {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.footer__wrapper {
+  display: none;
+}
+
+@media #{$tablet} {
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
 }
