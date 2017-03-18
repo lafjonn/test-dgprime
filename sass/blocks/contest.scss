@@ -231,7 +231,6 @@
     padding-top: 50px;
   }
 
-  .contest__user-contacts,
   .contest__form {
     flex-basis: 100%;
     display: flex;
@@ -239,11 +238,9 @@
 
   .contest__contacts-item {
     display: flex;
-    width: 700px;
+    width: 620px;
     flex-direction: row;
     padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
     box-sizing: border-box;
   }
 
@@ -258,6 +255,8 @@
   .contest__user-contacts--name {
     order: 1;
     padding-bottom: 0;
+    margin: auto;
+    width: 620px;
   }
 
   .contest__background-block {
@@ -386,10 +385,18 @@
     flex-wrap: wrap;
   }
 
+  .contest__user-contacts {
+    margin: 0;
+  }
+
   .contest__user-contacts--name{
-    flex-basis: 450px;
+    width: 450px;
     padding-right: 30px;
     justify-content: space-between;
+  }
+
+  .contest__user-contacts--connect {
+    width: 940px;
   }
 
   .contest__contacts-item {

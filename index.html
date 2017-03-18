@@ -9,30 +9,30 @@
   <body class="page">
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__menu">
-          <a class="header__logo">
-            <img class="header__logo-image  header__logo-image--mobile" src="img/logo-pink-white-mobile.svg">
-            <img class="header__logo-image  header__logo-image--tablet" src="img/logotype-white-tablet-svg.png">
-            <img class="header__logo-image  header__logo-image--desktop" src="img/logotype-white-desktop-svg.png">
-          </a>
-          <button class="header__dropdown-btn  header__dropdown-btn--close">Меню</button>
+        <div class="wrapper  wrapper--header">
+          <div class="header__menu">
+            <a class="header__logo">
+              <img class="header__logo-image  header__logo-image--mobile" src="http://placehold.it/147x40">
+            </a>
+            <button class="header__dropdown-btn">Меню</button>
+          </div>
+          <ul class="header__menu-list  header__menu-list--open">
+            <li class="header__list-item  header__list-item--active">
+              <a class="header__menu-link  header__menu-link--current" href="#">Главная</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__menu-link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__menu-link" href="form.html">Конкурс</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__menu-link" href="#">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="header__menu-list">
-          <li class="header__list-item  header__list-item--active">
-            <a class="header__menu-link  header__menu-link--current" href="#">Главная</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__menu-link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__menu-link" href="form.html">Конкурс</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__menu-link" href="#">HTML Academy</a>
-          </li>
-        </ul>
       </div>
-      <div class="header__images">
+      <div class="header__images  header__images--large">
         <p class="header__slogan">Взгляните на жизнь иначе!</p>
         <div class="header__images-hand"></div>
       </div>
@@ -52,7 +52,6 @@
         </div>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-
     </header>
 
     <div class="content">
@@ -62,30 +61,32 @@
           <p class="features__caption">Устали от серости мегаполиса?</p>
           <p class="features__caption">Нам есть, что вам предложить!</p>
         </div>
-        <div class="features__column">
-          <div class="feature">
-            <span class="feature__title">Поднимает настроение</span>
-            <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <div class="wrapper">
+          <div class="features__column">
+            <div class="feature">
+              <span class="feature__title">Поднимает настроение</span>
+              <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="feature">
+              <span class="feature__title">Меняет мир вокруг</span>
+              <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="feature">
+              <span class="feature__title">Заводит новых друзей</span>
+              <p class="feature__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
-          <div class="feature">
-            <span class="feature__title">Меняет мир вокруг</span>
-            <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <div class="features__images">
+            <div class="features__image  features__image--grey"></div>
+            <div class="features__image  features__image--pink"></div>
+            <div class="features__image  features__image--pink-smile"></div>
           </div>
-          <div class="feature">
-            <span class="feature__title">Заводит новых друзей</span>
-            <p class="feature__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </div>
-        </div>
-        <div class="features__images">
-          <div class="features__image  features__image--grey"></div>
-          <div class="features__image  features__image--pink"></div>
-          <div class="features__image  features__image--pink-smile"></div>
-        </div>
-        <div class="features__time">
-            <div class="features__time-content">
-            <div class="features__time-caption">Эффект<br class="features__br-tablet"> на 24 часа!</div>
-            <div class="features__time-text">Британские ученые провели исследования и доказали,<br class="features__br-desktop"> что положительный эффект<br class="features__br-tablet"> от использования приложения длится целые сутки!</div>
-            <a class="features__time-link">Узнать больше об исследовании</a>
+          <div class="features__time">
+              <div class="features__time-content">
+              <div class="features__time-caption">Эффект<br class="features__br-tablet"> на 24 часа!</div>
+              <div class="features__time-text">Британские ученые провели исследования и доказали,<br class="features__br-desktop"> что положительный эффект<br class="features__br-tablet"> от использования приложения длится целые сутки!</div>
+              <a class="features__time-link">Узнать больше об исследовании</a>
+            </div>
           </div>
         </div>
       </div>
@@ -200,7 +201,7 @@
         </div>
       </div>
 
-      <div class="contacts">
+      <div class="contacts  wrapper">
         <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
         <div class="contacts__items-block">
           <div class="contacts__item">
@@ -242,5 +243,6 @@
       </footer>
 
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

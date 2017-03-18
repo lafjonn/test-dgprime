@@ -1,9 +1,5 @@
 .features {
   background-color: $lightgrey;
-  @media (min-width: 700px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .features__header {
@@ -148,6 +144,11 @@
     background-image: url(../../img/timer-tablet.png);
     background-repeat: no-repeat;
     background-position: 10% 50%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 
 }

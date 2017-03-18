@@ -17,8 +17,20 @@
 
   .footer__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 620px;
+    margin: auto;
+  }
+
+}
+
+@media #{$desktop} {
+
+  .footer__wrapper {
+    display: flex;
+    align-items: center;
+    width: 940px;
   }
 
 }

@@ -2,7 +2,22 @@
   margin-top: 20px;
 }
 
-.post__img {
+.post__flag {
+  width: 140px;
+  height: 36px;
+  color: $white;
+  background-color: $pink;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  line-height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.post--main {
+  position: relative;
 }
 
 .post__text {
@@ -72,6 +87,10 @@
     height: 509px;
   }
 
+  .post__flag {
+    top: 10%;
+  }
+
   .post__img--small {
     width: 300px;
   }
@@ -104,14 +123,15 @@
   .post__like-block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &--main {
-      flex-basis:auto;
       width: 120px;
     }
 
     &--short {
-      flex-basis: 100%;
+      width: 100%;
+      padding-right: 20px;
     }
 
   }

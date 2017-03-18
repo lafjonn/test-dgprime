@@ -1,4 +1,4 @@
-.photo-page {
+.wrapper--photo {
   flex-direction: column;
   flex-basis: 100%;
   @include center();
@@ -23,7 +23,7 @@
     font-size: 18px;
   }
 
-  .photo-page {
+  .wrapper--photo {
     flex-direction: row;
     flex-wrap: wrap;
   }

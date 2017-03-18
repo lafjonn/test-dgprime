@@ -9,26 +9,28 @@
   <body class="page">
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__menu">
-          <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg">
-          </a>
-          <button class="header__dropdown-btn  header__dropdown-btn--close"></button>
+        <div class="wrapper  wrapper--header">
+          <div class="header__menu">
+            <a class="header__logo" href="index.html">
+              <img class="header__logo-image" src="http://placehold.it/147x40">
+            </a>
+            <button class="header__dropdown-btn"></button>
+          </div>
+          <ul class="header__menu-list  header__menu-list--open">
+            <li class="header__list-item">
+              <a class="header__menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__menu-link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="header__list-item  header__list-item--active">
+              <a class="header__menu-link  header__menu-link--current" href="#">Конкурс</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__menu-link" href="#">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="header__menu-list">
-          <li class="header__list-item">
-            <a class="header__menu-link" href="index.html">Главная</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__menu-link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="header__list-item  header__list-item--active">
-            <a class="header__menu-link  header__menu-link--current" href="#">Конкурс</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__menu-link" href="#">HTML Academy</a>
-          </li>
-        </ul>
       </div>
       <div class="header__images  header__images--small">
         <h1 class="header__page-title  header__page-title--contest">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -146,5 +148,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
