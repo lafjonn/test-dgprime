@@ -17,7 +17,7 @@
   color: $darkgrey;
   text-align: center;
   margin: 15px;
-  @media (min-width: 700px) {
+  @media #{$tablet} {
     font-size: 40px;
   }
 }
@@ -26,10 +26,10 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 45px;
-  @media (min-width: 700px) {
+  @media (min-width: 660px) {
     order: 1;
   }
-  @media (min-width: 1100px) {
+  @media #{$desktop} {
     flex-direction: row;
     width: 100%;
   }
@@ -38,7 +38,7 @@
 .features__images {
   display: flex;
   justify-content: center;
-  @media (min-width: 1100px) {
+  @media #{$desktop} {
     width: 100%;
   }
 }
@@ -46,21 +46,21 @@
 .features__image--pink-smile {
   height: 280px;
   width: 157px;
-  background-image: url(../../img/iphone-screen-mobile@1x.png);
+  background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
-  @media (min-width: 700px) {
+  @media #{$tablet} {
     width: 241px;
     height: 480px;
-    background-image: url(../../img/iphone-tablet-pink-smile.png);
+    background-image: url(../img/iphone-tablet-pink-smile.png);
     padding-left: 40px;
     padding-right: 40px;
     align-self: flex-start;
   }
-  @media (min-width: 1100px) {
+  @media #{$desktop} {
     height: 300px;
     width: 320px;
-    background-image: url(../../img/iphone-desktop-pinksmile.png);
+    background-image: url(../img/iphone-desktop-pinksmile.png);
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -68,10 +68,10 @@
 
 .features__image--grey {
   display: none;
-  background-image: url(../../img/iphone-desktop-grey.png);
+  background-image: url(../img/iphone-desktop-grey.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
-  @media (min-width: 1100px) {
+  @media #{$desktop} {
     display: block;
     height: 300px;
     width: 320px;
@@ -82,10 +82,10 @@
 
 .features__image--pink {
   display: none;
-  background-image: url(../../img/iphone-desktop-pink.png);
+  background-image: url(../img/iphone-desktop-pink.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
-  @media (min-width: 1100px) {
+  @media #{$desktop} {
     display: block;
     height: 300px;
     width: 320px;
@@ -141,7 +141,7 @@
     display: flex;
     order: 2;
     justify-content: flex-end;
-    background-image: url(../../img/timer-tablet.png);
+    background-image: url(../img/timer-tablet.png);
     background-repeat: no-repeat;
     background-position: 10% 50%;
   }
@@ -151,12 +151,16 @@
     flex-wrap: wrap;
   }
 
+  .features__time-content {
+  padding-right: 15px;
+}
+
 }
 
 @media #{$desktop} {
 
   .features__time {
-    background-image: url(../../img/timer-desktop.png);
+    background-image: url(../img/timer-desktop.png);
   }
 
   .features__br-tablet {
@@ -165,7 +169,7 @@
 
   .features__time-content {
     width: 530px;
-    padding-right: 130px;
+    padding-right: 10px;
   }
 
   .features__time-text,

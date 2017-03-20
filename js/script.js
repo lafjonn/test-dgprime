@@ -5,6 +5,7 @@ var menuToggle = document.querySelector(".header__menu-list--open");
 menu.classList.remove("header__menu-list--open");
 
 btn.addEventListener("click", function (event) {
+  "use strict";
   event.preventDefault();
   if (menu.classList.contains("header__menu-list--open")) {
     menu.classList.remove("header__menu-list--open");
