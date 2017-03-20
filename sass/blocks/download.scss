@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 320px;
   box-sizing: border-box;
-  align-self: stretch;
   padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
 }
 
 .download__btn {
