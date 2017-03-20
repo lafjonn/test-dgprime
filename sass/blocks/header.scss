@@ -10,6 +10,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: rgba(8, 11, 15, 0.4);
+}
+
+.header__wrapper--color {
+  background-color: $darkblue;
 }
 
 .header__logo-image {
@@ -30,12 +35,11 @@
   flex-direction: column;
   display: none;
   flex-basis: 100%;
-  opacity: 0.3;
 }
 
 .header__menu-list--open {
   display: flex;
-  opacity: 1;
+  background-color: $darkblue;
 }
 
 .header__dropdown-btn {
@@ -52,7 +56,6 @@
   text-align: center;
   padding-top: 26px;
   padding-bottom: 26px;
-  background-color: $darkblue;
   width: 100%;
 }
 
@@ -114,6 +117,12 @@
 
   .header {
     background-image: url(../img/back-tablet-1x.png);
+  }
+
+  .header__wrapper {
+    min-width: 660px;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .header__images--large {
@@ -191,9 +200,11 @@
 
   .header__wrapper {
     flex-wrap: nowrap;
-    width: 960px;
+    min-width: 960px;
+    max-width: 1174px;
     justify-content: space-between;
     padding-top: 0;
+    padding-right: 2%;
     margin: 0 auto;
   }
 
