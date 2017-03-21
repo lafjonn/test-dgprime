@@ -10,6 +10,13 @@
   box-sizing: border-box;
 }
 
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 @media #{$tablet} {
 
   .wrapper {
@@ -23,5 +30,9 @@
     .wrapper {
       width: 960px;
   }
+
+    .absolute {
+      position: relative;
+    }
 
 }

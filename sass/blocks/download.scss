@@ -59,11 +59,16 @@
     padding: 15px 45px;
   }
 
+  .download__phone--android {
+    opacity: 0.5;
+  }
+
 }
 
 @media #{$desktop} {
 
-  .download {
+  .download__phone--android {
+    opacity: 1;
   }
 
 }
