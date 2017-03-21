@@ -52,25 +52,32 @@
   border-top: 1px solid #475360;
   border-bottom: 1px solid #000001;
   text-align: center;
-  padding-top: 26px;
-  padding-bottom: 26px;
   width: 100%;
 }
 
 .header__menu-link {
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
   color: $white;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  width: 100%;
 }
 
 .header__images {
   display: flex;
   &--small {
-    height: 170px;
+    height: 236px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
