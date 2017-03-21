@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 
 .photo-edit__form {
@@ -16,15 +17,23 @@
   margin: auto;
 }
 
-.photo-edit__icons {
-  width: 198px;
-  height: 44px;
+.photo-edit__column {
   display: flex;
   flex-direction: column;
-  border: 2px solid $pink;
+}
+
+.photo-edit__icons {
+  display: flex;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.photo-edit__icon {
+  width: 20px;
+  height: 20px;
+  background-color: $pink;
+  margin-left: 10px;
 }
 
 .photo-edit__scale {
@@ -34,6 +43,11 @@
   margin: auto;
   position: relative;
   margin-bottom: 30px;
+}
+
+.photo-edit__scale-item--fill,
+.photo-edit__scale-item--contrast {
+  display: none;
 }
 
 .photo-edit__range {
@@ -51,10 +65,15 @@
 }
 
 .photo-edit__border {
-  min-width: 320px;
+  width: 100%;
   height: 1px;
   background-color: $grey;
   margin-bottom: 30px;
+}
+
+.photo-edit__buttons {
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-edit__btn {
@@ -62,4 +81,107 @@
   margin: auto;
   box-sizing: border-box;
   margin-bottom: 15px;
+}
+
+@media #{$tablet} {
+
+  .photo-edit {
+    width: 700px;
+  }
+
+  .photo-edit__form {
+    width: 620px;
+    margin: auto;
+    flex-direction: row;
+  }
+
+  .photo-edit__scale-item--fill,
+  .photo-edit__scale-item--contrast {
+    display: block;
+  }
+
+  .photo-edit__column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 15px;
+  }
+
+  .photo-edit__icons {
+    flex-direction: column;
+    height: 190px;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .photo-edit__icon {
+    margin: 0;
+  }
+
+  .photo-edit__scale-group {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    justify-content: space-between;
+  }
+
+  .photo-edit__scale-item {
+    padding-top: 20px;
+  }
+
+  .photo-edit__border {
+    width: 275px;
+  }
+
+  .photo-edit__buttons {
+    display: flex;
+    flex-direction: column;
+    height: 134px;
+    padding-top: 65px;
+  }
+
+  .photo-edit__img {
+    width: 300px;
+    height: 400px;
+  }
+
+}
+
+@media #{$desktop} {
+
+  .photo-edit {
+    width: 940px;
+  }
+
+  .photo-edit__form {
+    width: 820px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .photo-edit__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .photo-edit__border {
+    width: 410px;
+  }
+
+  .photo-edit__buttons {
+    flex-direction: row;
+    width: 410px;
+    justify-content: space-between;
+  }
+
+  .photo-edit__scale {
+    width: 288px;
+  }
+
+  .photo-edit__btn {
+    width: 183px;
+    box-sizing: border-box;
+  }
+
 }

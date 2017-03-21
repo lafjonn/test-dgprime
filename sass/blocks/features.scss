@@ -8,6 +8,7 @@
   flex-direction: column;
   min-height: 250px;
   padding-top: 30px;
+  width: 100%;
 }
 
 .features__caption {
@@ -16,11 +17,168 @@
   color: $darkgrey;
   text-align: center;
   margin: 15px;
+  @media #{$tablet} {
+    font-size: 40px;
+  }
 }
 
-.features__iphone {
+.features__column {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 45px;
+  @media (min-width: 660px) {
+    order: 1;
+  }
+  @media #{$desktop} {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.features__images {
+  display: flex;
+  justify-content: center;
+  @media #{$desktop} {
+    width: 100%;
+  }
+}
+
+.features__image--pink-smile {
   height: 280px;
-  background-image: url(../../img/iphone-screen-mobile.png);
+  width: 157px;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
+  @media #{$tablet} {
+    width: 241px;
+    height: 480px;
+    background-image: url(../img/iphone-tablet-pink-smile.png);
+    padding-left: 40px;
+    padding-right: 40px;
+    align-self: flex-start;
+  }
+  @media #{$desktop} {
+    height: 300px;
+    width: 320px;
+    background-image: url(../img/iphone-desktop-pinksmile.png);
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.features__image--grey {
+  display: none;
+  background-image: url(../img/iphone-desktop-grey.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  @media #{$desktop} {
+    display: block;
+    height: 300px;
+    width: 320px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.features__image--pink {
+  display: none;
+  background-image: url(../img/iphone-desktop-pink.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  @media #{$desktop} {
+    display: block;
+    height: 300px;
+    width: 320px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.features__time {
+  display: none;
+  width: 100%;
+  height: 395px;
+}
+
+.features__time-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 100px;
+  padding-right: 55px;
+}
+
+.features__time-caption {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 25px;
+}
+
+.features__time-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $darkgrey;
+  padding-bottom: 25px;
+}
+
+.features__time-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $pink;
+  text-decoration: underline;
+}
+
+.features__br-desktop {
+  display: none;
+}
+
+@media #{$tablet} {
+
+  .features__time {
+    display: flex;
+    order: 2;
+    justify-content: flex-end;
+    background-image: url(../img/timer-tablet.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__time-content {
+  padding-right: 15px;
+}
+
+}
+
+@media #{$desktop} {
+
+  .features__time {
+    background-image: url(../img/timer-desktop.png);
+  }
+
+  .features__br-tablet {
+    display: none;
+  }
+
+  .features__time-content {
+    width: 530px;
+    padding-right: 10px;
+  }
+
+  .features__time-text,
+  .features__time-link {
+    font-size: 18px;
+  }
+
+  .features__br-desktop {
+    display: block;
+  }
+
 }

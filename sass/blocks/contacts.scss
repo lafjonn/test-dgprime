@@ -6,6 +6,11 @@
   padding-bottom: 40px;
 }
 
+.contacts__items-block {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__heading {
   font-size: 24px;
   font-weight: 300;
@@ -32,4 +37,31 @@
   font-size: 24px;
   font-weight: 300;
   color: $pink;
+}
+
+@media #{$tablet} {
+
+  .contacts {
+    padding-bottom: 0;
+  }
+
+  .contacts__heading {
+    font-size: 40px;
+    width: 380px;
+  }
+
+  .contacts__items-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+}
+
+@media #{$desktop} {
+  .contacts__items-block {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+  }
 }

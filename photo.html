@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper  absolute">
         <div class="header__menu">
           <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg">
+            <img class="header__logo-image" src="http://placehold.it/147x40">
           </a>
-          <button class="header__dropdown-btn  header__dropdown-btn--close"></button>
+          <button class="header__dropdown-btn"></button>
         </div>
-        <ul class="header__menu-list">
+        <ul class="header__menu-list  header__menu-list--open">
           <li class="header__list-item header__list-item--active">
             <a class="header__menu-link" href="index.html">Главная</a>
           </li>
@@ -30,154 +31,201 @@
         </ul>
       </div>
       <div class="header__images  header__images--small">
-        <h1 class="header__page-title">Фотографии пользователей</h1>
+        <h1 class="header__page-title  header__page-title--photo">Фотографии пользователей</h1>
       </div>
     </header>
 
     <div class="content">
       <div class="photo-page">
-        <p class="photo-page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="wrapper wrapper--photo">
+          <p class="photo-page__description  photo-page__description--up">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
-        <div class="post  post--main">
-          <img class="post__img  post__img--main" src="img/panorama-mobile@1x.jpg">
-          <div class="post__text">
-            <span class="post__username">Анна</span>
-            <span class="post__time">
-              <span class="post__half">(</span>5 минут назад
-              <span class="post__half">)</span>
-            </span>
-            <p class="post__usertext">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="post__add-like"></button>
-            <span class="post__like">Нравится:</span>
-            <span class="post__like-count">215</span>
+          <div class="post  post--main">
+            <img class="post__img  post__img--main" src="img/panorama-mobile@1x.jpg">
+            <div class="post__flag">Панорама дня</div>
+            <div class="post__text  post__text--main">
+              <div class="post__name-block">
+                <span class="post__username">Анна</span>
+                <span class="post__time">
+                  <span class="post__half">(</span>5 минут назад
+                  <span class="post__half">)</span>
+                </span>
+              </div>
+              <p class="post__usertext  post__usertext--main">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="post__like-block  post__like-block--main">
+                <button class="post__add-like"></button>
+                <span class="post__like">Нравится: 215</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="post">
-          <img class="post__img" src="img/photo-1-mobile@1x.jpg">
-          <div class="post__text">
-            <span class="post__username">Левон</span>
-            <span class="post__time">
-              <span class="post__half">(</span>5 часов назад
-              <span class="post__half">)</span>
-            </span>
-            <p class="post__usertext">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="post__add-like"></button>
-            <span class="post__like">Нравится:</span>
-            <span class="post__like-count">356</span>
+          <div class="post post--small">
+            <img class="post__img  post__img--small" src="img/photo-1-mobile@1x.jpg">
+            <div class="post__text  post__text--small">
+              <div class="post__name-block">
+                <span class="post__username">Левон</span>
+                <span class="post__time">
+                  <span class="post__half">(</span>5 часов назад
+                  <span class="post__half">)</span>
+                </span>
+              </div>
+              <p class="post__usertext">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="post__like-block  post__like-block--short">
+                <button class="post__add-like"></button>
+                <span class="post__like">Нравится: 356</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="post">
-          <img class="post__img" src="img/photo-2-mobile@1x.jpg">
-          <div class="post__text">
-            <span class="post__username">Антон</span>
-            <span class="post__time">
-              <span class="post__half">(</span>12 часов назад
-              <span class="post__half">)</span>
-            </span>
-            <p class="post__usertext">Соседи будут рады!</p>
-            <button class="post__add-like"></button>
-            <span class="post__like">Нравится:</span>
-            <span class="post__like-count">666</span>
+          <div class="post  post--small">
+            <img class="post__img  post__img--small" src="img/photo-2-mobile@1x.jpg">
+            <div class="post__text  post__text--small">
+              <div class="post__name-block">
+                <span class="post__username">Антон</span>
+                <span class="post__time">
+                  <span class="post__half">(</span>12 часов назад
+                  <span class="post__half">)</span>
+                </span>
+              </div>
+              <p class="post__usertext">Соседи будут рады!</p>
+              <div class="post__like-block  post__like-block--short">
+                <button class="post__add-like"></button>
+                <span class="post__like">Нравится: 666</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="post">
-          <img class="post__img" src="img/photo-3-mobile@1x.jpg">
-          <div class="post__text">
-            <span class="post__username">Борис</span>
-            <span class="post__time">
-              <span class="post__half">(</span>20 часов назад
-              <span class="post__half">)</span>
-            </span>
-            <p class="post__usertext">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="post__add-like"></button>
-            <span class="post__like">Нравится:</span>
-            <span class="post__like-count">215</span>
+          <div class="post  post--small">
+            <img class="post__img  post__img--small" src="img/photo-3-mobile@1x.jpg">
+            <div class="post__text  post__text--small">
+              <div class="post__name-block">
+                <span class="post__username">Борис</span>
+                <span class="post__time">
+                  <span class="post__half">(</span>20 часов назад
+                  <span class="post__half">)</span>
+                </span>
+              </div>
+              <p class="post__usertext">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="post__like-block  post__like-block--short">
+                <button class="post__add-like"></button>
+                <span class="post__like">Нравится: 215</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="post">
-          <img class="post__img" src="img/photo-4-mobile@1x.jpg">
-          <div class="post__text">
-            <span class="post__username">Сергей</span>
-            <span class="post__time">
-              <span class="post__half">(</span>25 часов назад
-              <span class="post__half">)</span>
-            </span>
-            <p class="post__usertext">Самая кубанская в мире!</p>
-            <button class="post__add-like"></button>
-            <span class="post__like">Нравится:</span>
-            <span class="post__like-count">4</span>
+          <div class="post  post--small">
+            <img class="post__img  post__img--small" src="img/photo-4-mobile@1x.jpg">
+            <div class="post__text  post__text--small">
+              <div class="post__name-block">
+                <span class="post__username">Сергей</span>
+                <span class="post__time">
+                  <span class="post__half">(</span>25 часов назад
+                  <span class="post__half">)</span>
+                </span>
+              </div>
+              <p class="post__usertext">Самая кубанская в мире!</p>
+              <div class="post__like-block  post__like-block--short">
+                <button class="post__add-like"></button>
+                <span class="post__like">Нравится: 4</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="post">
-          <img class="post__img" src="img/photo-5-mobile@1x.jpg">
-          <div class="post__text">
-            <span class="post__username">Максим</span>
-            <span class="post__time">
-              <span class="post__half">(</span>40 часов назад
-              <span class="post__half">)</span>
-            </span>
-            <p class="post__usertext">Где снег-то?</p>
-            <button class="post__add-like"></button>
-            <span class="post__like">Нравится:</span>
-            <span class="post__like-count">150</span>
+          <div class="post  post--small">
+            <img class="post__img  post__img--small" src="img/photo-5-mobile@1x.jpg">
+            <div class="post__text  post__text--small">
+              <div class="post__name-block">
+                <span class="post__username">Максим</span>
+                <span class="post__time">
+                  <span class="post__half">(</span>40 часов назад
+                  <span class="post__half">)</span>
+                </span>
+              </div>
+              <p class="post__usertext">Где снег-то?</p>
+              <div class="post__like-block  post__like-block--short">
+                <button class="post__add-like"></button>
+                <span class="post__like">Нравится: 150</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="post">
-          <img class="post__img" src="img/photo-6-mobile@1x.jpg">
-          <div class="post__text">
-            <span class="post__username">Надежда</span>
-            <span class="post__time">
-              <span class="post__half">(</span>45 часов назад
-              <span class="post__half">)</span>
-            </span>
-            <p class="post__usertext">Всем GM и взаимные лайки!</p>
-            <button class="post__add-like"></button>
-            <span class="post__like">Нравится:</span>
-            <span class="post__like-count">2560</span>
+          <div class="post  post--small">
+            <img class="post__img  post__img--small" src="img/photo-6-mobile@1x.jpg">
+            <div class="post__text  post__text--small">
+              <div class="post__name-block">
+                <span class="post__username">Надежда</span>
+                <span class="post__time">
+                  <span class="post__half">(</span>45 часов назад
+                  <span class="post__half">)</span>
+                </span>
+              </div>
+              <p class="post__usertext">Всем GM и взаимные лайки!</p>
+              <div class="post__like-block  post__like-block--short">
+                <button class="post__add-like"></button>
+                <span class="post__like">Нравится: 2560</span>
+              </div>
+            </div>
           </div>
+          <p class="photo-page__description">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <p class="photo-page__description">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
 
         <div class="photo-edit">
           <form class="photo-edit__form" action="form" method="post">
             <img class="photo-edit__img" src="img/photo-7-mobile@1x.jpg">
-            <div class="photo-edit__icons">
-              <div class="photo-edit__icon  photo-edit__icon--crop"></div>
-              <div class="photo-edit__icon  photo-edit__icon--fill"></div>
-              <div class="photo-edit__icon  photo-edit__icon--contrast"></div>
+            <div class="photo-edit__column">
+              <div class="photo-edit__icons">
+                <div class="photo-edit__icon  photo-edit__icon--crop"></div>
+                <div class="photo-edit__icon  photo-edit__icon--fill"></div>
+                <div class="photo-edit__icon  photo-edit__icon--contrast"></div>
+              </div>
+              <div class="photo-edit__scale-group">
+                <div class="photo-edit__scale-item  photo-edit__scale-item--crop">
+                  <div class="photo-edit__scale  photo-edit__scale--crop">
+                    <div class="photo-edit__range"></div>
+                  </div>
+                  <div class="photo-edit__border"></div>
+                </div>
+                <div class="photo-edit__scale-item  photo-edit__scale-item--fill">
+                  <div class="photo-edit__scale  photo-edit__scale--fill">
+                    <div class="photo-edit__range"></div>
+                  </div>
+                  <div class="photo-edit__border"></div>
+                </div>
+                <div class="photo-edit__scale-item  photo-edit__scale-item--contrast">
+                  <div class="photo-edit__scale  photo-edit__scale--contrast">
+                    <div class="photo-edit__range"></div>
+                  </div>
+                  <div class="photo-edit__border"></div>
+                </div>
+              </div>
+              <div class="photo-edit__buttons">
+                <input class="photo-edit__btn  btn  btn--pink" type="submit" value="Запостить">
+                <input class="photo-edit__btn  btn  btn--grey" type="reset" value="Отмена">
+              </div>
             </div>
-            <div class="photo-edit__scale">
-              <div class="photo-edit__range"></div>
-            </div>
-            <div class="photo-edit__border"></div>
-            <input class="photo-edit__btn  btn  btn--pink" type="submit" value="Запостить">
-            <input class="photo-edit__btn  btn  btn--grey" type="reset" value="Отмена">
           </form>
         </div>
       </div>
     </div>
 
     <footer class="footer">
-      <a class="footer__logo" href="index.html">
-        <img class="header__logo-image" src="img/logotype-blue-tablet-svg.png">
-      </a>
-      <div class="footer__social  social">
-        <a class="social__icon  social__icon--twitter" href="#">Twitter</a>
-        <a class="social__icon  social__icon--facebook" href="#">Facebook</a>
-        <a class="social__icon  social__icon--youtube" href="#">Youtube</a>
-      </div>
-      <div class="footer__copyright  copyright">
-        <span class="copyright__label">Разработано</span>
-        <a class="copyright__logo" href="https://htmlacademy.ru/">
-          <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
+      <div class="footer__wrapper">
+        <a class="footer__logo" href="index.html">
+          <img class="footer__logo-image" src="http://placehold.it/147x40">
         </a>
+        <div class="footer__social  social">
+          <a class="social__icon  social__icon--twitter" href="#">Twitter</a>
+          <a class="social__icon  social__icon--facebook" href="#">Facebook</a>
+          <a class="social__icon  social__icon--youtube" href="#">Youtube</a>
+        </div>
+        <div class="footer__copyright  copyright">
+          <span class="copyright__label">Разработано</span>
+          <a class="copyright__logo" href="https://htmlacademy.ru/">
+            <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
