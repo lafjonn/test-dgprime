@@ -13,3 +13,25 @@
   color: $darkgrey;
   padding-right: 15px;
 }
+
+.copyright__logo-svg {
+  fill: $pink;
+}
+
+.copyright__logo-svg:hover {
+  fill: $darkblue;
+}
+
+.copyright__logo-svg:active {
+  opacity: 0.3;
+}
+
+@media #{$tablet} {
+}
+
+
+@media #{$desktop} {
+  .copyright__label {
+    font-size: 18px;
+  }
+}

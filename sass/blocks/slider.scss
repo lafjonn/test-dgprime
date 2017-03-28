@@ -1,3 +1,54 @@
+.slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .slider__input {
   display: none;
+}
+
+.slider::before {
+  content: "";
+  display: block;
+  border-top: 28px solid #fff;
+  border-right: calc(100vw - 17px) solid $lightgrey;
+  content: "";
+  top: 452px;
+}
+
+.slider__controls {
+  width: 60px;
+  height: 12px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 42px;
+}
+
+.slider__label {
+  width: 6px;
+  height: 6px;
+  border: 3px solid $lightgrey;
+  border-radius: 50%;
+  background-color: #b5b9be;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slider__controls .slider__label[for="review-1"] {
+  background-color: $lightgrey;
+  border: 3px solid $darkblue;
+}
+
+@media #{$tablet} {
+  .slider::after {
+    border-top: 50px solid #fff;
+  }
+}
+
+@media #{$desktop} {
+  .slider::after {
+    border-top: 95px solid #fff;
+  }
 }

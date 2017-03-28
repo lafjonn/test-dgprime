@@ -1,7 +1,8 @@
-.wrapper--photo {
+.photo-page__wrapper {
   flex-direction: column;
   flex-basis: 100%;
   @include center();
+  padding-top: 45px;
 }
 
 .photo-page__description {
@@ -12,7 +13,7 @@
   width: 275px;
   margin: auto;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   align-self: center;
 }
 
@@ -21,9 +22,11 @@
   .photo-page__description {
     width: 440px;
     font-size: 18px;
+    padding-top: 55px;
+    padding-bottom: 70px;
   }
 
-  .wrapper--photo {
+  .photo-page__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
   }

@@ -2,15 +2,17 @@
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  margin-bottom: 55px;
 }
 
 .contest__description {
-  flex-basis: 100%;
+  width: 280px;
   margin: auto;
   text-align: center;
-  padding-top: 54px;
+  padding-top: 45px;
   color: $darkgrey;
   font-size: 14px;
+  line-height: 30px;
 }
 
 .contest__form {
@@ -26,11 +28,10 @@
   text-transform: uppercase;
   color: $pink;
   padding-top: 15px;
-  padding-bottom: 5px;
 }
 
 .contest__checkbox-item {
-  padding-bottom: 41px;
+  padding-bottom: 52px;
 }
 
 .contest__input {
@@ -44,6 +45,12 @@
   color: $darkgrey;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+  outline: none;
+}
+
+.contest__input:hover,
+.contest__experience:hover {
+  border: 2px solid $darkblue;
 }
 
 .contest__experience {
@@ -64,8 +71,11 @@
 }
 
 .contest__input:focus,
-.contest__experience:focus {
+.contest__experience:focus,
+.contest__input:active,
+.contest__experience:active {
   outline: none;
+  border: 2px solid $pink;
 }
 
 .contest__input::-webkit-input-placeholder,
@@ -92,8 +102,7 @@
   padding-top: -10px;
 }
 
-.contest__check-description,
-.contest__subtitle {
+.contest__check-description {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -107,6 +116,20 @@
   display: flex;
 }
 
+.contest__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $pink;
+  text-align: center;
+  width: 220px;
+  margin: auto;
+  padding-top: 21px;
+  padding-bottom: 41px;
+  display: flex;
+}
+
 .contest__subtitle-experience {
   font-size: 14px;
   font-weight: 400;
@@ -116,7 +139,7 @@
   text-align: center;
   width: 220px;
   margin: auto;
-  padding-top: 41px;
+  padding-top: 47px;
   display: flex;
   background-color: $white;
 }
@@ -146,22 +169,42 @@
 }
 
 .contest__checkbox-label {
-  padding-left: 50px;
+  padding-left: 42px;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: $darkgrey;
   padding-bottom: 41px;
+  position: relative;
 }
 
-.contest__user-contacts,
+.contest__user-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 23px;
+  padding-top: 32px;
+  border: none;
+}
+
 .contest__user-text {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  padding-bottom: 43px;
-  padding-top: 41px;
+  width: 100%;
+  padding-bottom: 23px;
+  padding-top: 32px;
   border: none;
+}
+
+.contest__contacts-item,
+.contest__user-contacts--connect {
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 22px;
+}
+
+.contest__label {
+  padding-left: 22px;
 }
 
 .contest__btn {
@@ -171,13 +214,30 @@
   text-transform: uppercase;
   border-radius: 3px;
   border: none;
-  padding: 25px;
+  padding: 24px;
   cursor: pointer;
   color: $white;
   background-color: #2aab6d;
   width: 280px;
   margin: auto;
-  margin-top: 48px;
+  margin-top: 30px;
+  outline: none;
+}
+
+.contest__btn:hover {
+  background-color: #1c9b5e;
+}
+
+.contest__btn:active {
+  color: #60b98e;
+}
+
+.contest__btn:disabled,
+.contest__btn:disabled:hover {
+  background-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  color: $white;
+  cursor: default;
 }
 
 .contest__note {
@@ -210,7 +270,66 @@
   flex-direction: column;
 }
 
+.contest__checkbox + label::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  background: $white;
+  top: -7px;
+  left: 0;
+}
+
+.contest__checkbox:checked + label::before {
+  background-size: 28px 16px;
+  background-image: url("../img/icon-yes-pink.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contest__checkbox + label:hover::before {
+    border: 2px solid $darkblue;
+}
+
+.contest__checkbox:active  + label::before{
+  border: 2px solid $pink;
+}
+
+.contest__radio + label::before {
+  content: "";
+  position: absolute;
+  margin-left: 4px;
+  width: 15px;
+  height: 15px;
+  border: 10px solid $white;
+  border-radius: 50%;
+  background-color: $white;
+  box-shadow: 0 0 0 2px #e5e5e5;
+  top: -2px;
+  left: -25px;
+}
+
+.contest__radio + label:hover::before {
+  box-shadow: 0 0 0 2px $darkblue;
+}
+
+.contest__radio:checked + label::before {
+  background-color: $pink;
+}
+
+.contest__radio:active + label::before {
+  box-shadow: 0 0 0 2px $pink;
+}
+
+
 @media #{$tablet} {
+  
+  .contest__radio + label::before,
+  .contest__checkbox + label::before {
+    left: 60px;
+  }
 
   .contest__description {
     width: 490px;

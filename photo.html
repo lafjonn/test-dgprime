@@ -17,16 +17,24 @@
         </div>
         <ul class="header__menu-list  header__menu-list--open">
           <li class="header__list-item header__list-item--active">
-            <a class="header__menu-link" href="index.html">Главная</a>
+            <a class="header__menu-link" href="index.html">
+              <span class="header__link-text">Главная</span>
+            </a>
           </li>
           <li class="header__list-item">
-            <a class="header__menu-link  header__menu-link--current" href="#">Фотографии</a>
+            <a class="header__menu-link  header__menu-link--current" href="#">
+              <span class="header__link-text  header__link-text--current">Фотографии</span>
+            </a>
           </li>
           <li class="header__list-item">
-            <a class="header__menu-link" href="form.html">Конкурс</a>
+            <a class="header__menu-link" href="form.html">
+              <span class="header__link-text">Конкурс</span>
+            </a>
           </li>
           <li class="header__list-item">
-            <a class="header__menu-link" href="#">HTML Academy</a>
+            <a class="header__menu-link" href="#">
+              <span class="header__link-text">HTML Academy</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -37,11 +45,15 @@
 
     <div class="content">
       <div class="photo-page">
-        <div class="wrapper wrapper--photo">
+        <div class="wrapper photo-page__wrapper">
           <p class="photo-page__description  photo-page__description--up">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
           <div class="post  post--main">
-            <img class="post__img  post__img--main" src="img/panorama-mobile@1x.jpg">
+            <picture class="post__img  post__img--main">
+              <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня - Мост" srcset="img/panorama-mobile@2x.jpg 2x">
+            </picture>
             <div class="post__flag">Панорама дня</div>
             <div class="post__text  post__text--main">
               <div class="post__name-block">
@@ -60,7 +72,11 @@
           </div>
 
           <div class="post post--small">
-            <img class="post__img  post__img--small" src="img/photo-1-mobile@1x.jpg">
+            <picture class="post__img  post__img--small">
+              <source media="(min-width:960px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль" srcset="img/photo-1-mobile@2x.jpg 2x">
+            </picture>
             <div class="post__text  post__text--small">
               <div class="post__name-block">
                 <span class="post__username">Левон</span>
@@ -78,7 +94,11 @@
           </div>
 
           <div class="post  post--small">
-            <img class="post__img  post__img--small" src="img/photo-2-mobile@1x.jpg">
+            <picture class="post__img  post__img--small">
+              <source media="(min-width:960px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg" alt="Барабаны" srcset="img/photo-2-mobile@2x.jpg 2x">
+            </picture>
             <div class="post__text  post__text--small">
               <div class="post__name-block">
                 <span class="post__username">Антон</span>
@@ -96,7 +116,11 @@
           </div>
 
           <div class="post  post--small">
-            <img class="post__img  post__img--small" src="img/photo-3-mobile@1x.jpg">
+            <picture class="post__img  post__img--small">
+              <source media="(min-width:960px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile@1x.jpg" alt="Окно" srcset="img/photo-3-mobile@2x.jpg 2x">
+            </picture>
             <div class="post__text  post__text--small">
               <div class="post__name-block">
                 <span class="post__username">Борис</span>
@@ -114,7 +138,11 @@
           </div>
 
           <div class="post  post--small">
-            <img class="post__img  post__img--small" src="img/photo-4-mobile@1x.jpg">
+            <picture class="post__img  post__img--small">
+              <source media="(min-width:960px)" srcset="img/photo-4-desktop@1x.jpg, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-4-tablet@1x.jpg, img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-mobile@1x.jpg" alt="Кубанская бахча" srcset="img/photo-4-mobile@2x.jpg 2x">
+            </picture>
             <div class="post__text  post__text--small">
               <div class="post__name-block">
                 <span class="post__username">Сергей</span>
@@ -132,7 +160,11 @@
           </div>
 
           <div class="post  post--small">
-            <img class="post__img  post__img--small" src="img/photo-5-mobile@1x.jpg">
+            <picture class="post__img  post__img--small">
+              <source media="(min-width:960px)" srcset="img/photo-5-desktop@1x.jpg, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-5-tablet@1x.jpg, img/photo-5-tablet@2x.jpg 2x">
+              <img src="img/photo-5-mobile@1x.jpg" alt="Пейзаж" srcset="img/photo-5-mobile@2x.jpg 2x">
+            </picture>
             <div class="post__text  post__text--small">
               <div class="post__name-block">
                 <span class="post__username">Максим</span>
@@ -150,7 +182,11 @@
           </div>
 
           <div class="post  post--small">
-            <img class="post__img  post__img--small" src="img/photo-6-mobile@1x.jpg">
+            <picture class="post__img  post__img--small">
+              <source media="(min-width:960px)" srcset="img/photo-6-desktop@1x.jpg, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-6-tablet@1x.jpg, img/photo-6-tablet@2x.jpg 2x">
+              <img src="img/photo-6-mobile@1x.jpg" alt="Вид из самолета" srcset="img/photo-6-mobile@2x.jpg 2x">
+            </picture>
             <div class="post__text  post__text--small">
               <div class="post__name-block">
                 <span class="post__username">Надежда</span>
@@ -171,29 +207,34 @@
 
         <div class="photo-edit">
           <form class="photo-edit__form" action="form" method="post">
-            <img class="photo-edit__img" src="img/photo-7-mobile@1x.jpg">
+            <picture class="photo-edit__img">
+              <source media="(min-width:960px)" srcset="img/photo-7-desktop@1x.jpg, img/photo-7-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-7-tablet@1x.jpg, img/photo-7-tablet@2x.jpg 2x">
+              <img src="img/photo-7-mobile@1x.jpg" alt="Загруженное фото" srcset="img/photo-7-mobile@2x.jpg 2x">
+            </picture>
             <div class="photo-edit__column">
               <div class="photo-edit__icons">
-                <div class="photo-edit__icon  photo-edit__icon--crop"></div>
+                <div class="photo-edit__icon photo-edit__icon--crop">
+                </div>
                 <div class="photo-edit__icon  photo-edit__icon--fill"></div>
-                <div class="photo-edit__icon  photo-edit__icon--contrast"></div>
+                <div class="photo-edit__icon  photo-edit__icon--contrast-active"></div>
               </div>
               <div class="photo-edit__scale-group">
                 <div class="photo-edit__scale-item  photo-edit__scale-item--crop">
                   <div class="photo-edit__scale  photo-edit__scale--crop">
-                    <div class="photo-edit__range"></div>
+                    <div class="photo-edit__range  photo-edit__range--crop"></div>
                   </div>
                   <div class="photo-edit__border"></div>
                 </div>
                 <div class="photo-edit__scale-item  photo-edit__scale-item--fill">
                   <div class="photo-edit__scale  photo-edit__scale--fill">
-                    <div class="photo-edit__range"></div>
+                    <div class="photo-edit__range  photo-edit__range--fill"></div>
                   </div>
                   <div class="photo-edit__border"></div>
                 </div>
                 <div class="photo-edit__scale-item  photo-edit__scale-item--contrast">
                   <div class="photo-edit__scale  photo-edit__scale--contrast">
-                    <div class="photo-edit__range"></div>
+                    <div class="photo-edit__range  photo-edit__range--contrast"></div>
                   </div>
                   <div class="photo-edit__border"></div>
                 </div>
@@ -211,17 +252,34 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html">
-          <img class="footer__logo-image" src="http://placehold.it/147x40">
+          <svg class="footer__logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <g>
+              <path class="footer__logo-element" fill="none" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
+              <path class="footer__logo-element" fill="none" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
+              <path class="footer__logo-element" fill="none" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129 c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532 H102.744z"/>
+              <path class="footer__logo-element" fill="none" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.16 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.936c0,0.676-0.577,1.288-1.285,1.288c-0.482,0-0.807-0.259-1.03-0.58l-8.401-10.464l-4.863,4.861 v4.895c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
+            </g>
+            <path fill="#FFFFFF" d="M60.498,28.266"/>
+            <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
+          </svg>
         </a>
         <div class="footer__social  social">
-          <a class="social__icon  social__icon--twitter" href="#">Twitter</a>
-          <a class="social__icon  social__icon--facebook" href="#">Facebook</a>
-          <a class="social__icon  social__icon--youtube" href="#">Youtube</a>
+          <a class="social__link" href="#">Twitter
+            <img class="social__icon  social__icon--twitter" src="img/icon-twitter.svg">
+          </a>
+          <a class="social__link" href="#">Facebook
+            <img class="social__icon  social__icon--facebook" src="img/icon-facebook.svg">
+          </a>
+          <a class="social__link" href="#">Youtube
+            <img class="social__icon  social__icon--youtube" src="img/icon-youtube.svg">
+          </a>
         </div>
         <div class="footer__copyright  copyright">
           <span class="copyright__label">Разработано</span>
           <a class="copyright__logo" href="https://htmlacademy.ru/">
-            <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
+            <svg class="copyright__logo-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
           </a>
         </div>
       </div>

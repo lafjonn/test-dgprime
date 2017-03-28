@@ -38,12 +38,13 @@
 
   .review {
     flex-direction: column-reverse;
+    padding-top: 20px;
   }
 
   .review__info {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .review__quote {
@@ -53,7 +54,7 @@
 
   .review__name {
     font-size: 20px;
-    padding-top: 45px;
+    padding-top: 30px;
   }
 }
 
@@ -64,8 +65,9 @@
   }
 
   .review {
-    background-image: url("http://placehold.it/79x63");
+    background-image: url(../img/icon-quotes.svg);
     background-repeat: no-repeat;
+    background-size: 79px auto;
     background-position: 50% 70px;
   }
 
@@ -79,9 +81,11 @@
     position: absolute;
     top: 210px;
     left: -90px;
-    width: 30px;
-    height: 30px;
-    background-color: $pink;
+    width: 22px;
+    height: 41px;
+    background-image: url(../img/icon-review-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: 22px auto;
   }
 
   .review__quote::after {
@@ -89,9 +93,11 @@
     position: absolute;
     top: 210px;
     right: -90px;
-    width: 30px;
-    height: 30px;
-    background-color: $pink;
+    width: 22px;
+    height: 41px;
+    background-image: url(../img/icon-review-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: 22px auto;
   }
 
 }

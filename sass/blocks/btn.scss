@@ -19,3 +19,12 @@
     @include btn($grey);
   }
 }
+
+.btn:hover {
+  background-color: $white;
+  color: $pink;
+}
+
+.btn:active {
+  color: #f1becc;
+}

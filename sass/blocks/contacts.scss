@@ -2,13 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contacts__items-block {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 
 .contacts__heading {
@@ -24,7 +27,7 @@
   flex-direction: column;
   text-align: center;
   width: 240px;
-  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .contacts__type {
@@ -37,6 +40,16 @@
   font-size: 24px;
   font-weight: 300;
   color: $pink;
+}
+
+.contacts__email:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.contacts__email:active {
+  color: $grey;
+  text-decoration: none;
 }
 
 @media #{$tablet} {
@@ -54,6 +67,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  
+  .contacts__item {
+    padding-bottom: 50px;
+  }
+  
+  .contacts__item:last-child {
+    padding-bottom: 20px;
   }
 
 }

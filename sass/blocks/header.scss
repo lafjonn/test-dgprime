@@ -6,16 +6,17 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 89px;
+  min-height: 66px;
   background-color: rgba(8, 11, 15, 0.4);
   width: 100%;
+  align-content: center;
 }
 
 .header__wrapper--color {
   background-color: $darkblue;
 }
 
-.header__logo-image {
+.header__logo {
   padding-left: 20px;
 }
 
@@ -25,6 +26,10 @@
   padding-top: 22px;
   padding-bottom: 22px;
   width: 100%;
+  height: 66px;
+  box-sizing: border-box;
+  align-items: center;
+  margin: auto;
 }
 
 .header__menu-list {
@@ -41,35 +46,80 @@
 }
 
 .header__dropdown-btn {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 24px;
   font-size: 0px;
   margin-right: 20px;
-  margin-top: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  margin-left: 15px;
+
+  &--cross {
+    background-image: url("../img/icon-menu-cross.svg");
+    width: 24px;
+    height: 23px;
+  }
 }
 
 .header__list-item {
   border-top: 1px solid #475360;
-  border-bottom: 1px solid #000001;
+  border-bottom: 1px solid #000000;
   text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65px;
+  box-sizing: border-box;
 }
 
 .header__menu-link {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
   color: $white;
-  padding-top: 26px;
-  padding-bottom: 26px;
   width: 100%;
+  text-transform: uppercase;
+  height: 63px;
+  box-sizing: border-box;
+}
+
+.header__link-text {
+  align-self: center;
+}
+
+.header__menu-link:hover {
+  color: $pink;
+}
+
+.header__menu-link:active {
+  color: $white;
+  opacity: 0.3;
+}
+
+.header__link-text--current {
+  box-shadow: 0 2px 0 $white;
+}
+
+.header__menu-link--current:hover  .header__link-text--current {
+  color: $pink;
+  box-shadow: 0 2px 0 $pink;
 }
 
 .header__images {
   display: flex;
+  background-color: $darkblue;
+  &--large {
+  }
   &--small {
     height: 236px;
     justify-content: center;
@@ -77,8 +127,18 @@
     padding-bottom: 50px;
     background-image: url(../img/bg-back-mobile@1x.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center top;
+    background-size: auto,cover;
+    box-sizing: border-box;
+
+    @media #{$retina} {
+      background-image: url(../img/bg-back-mobile@2x.jpg);
+    }
   }
+}
+
+.header__background-margin {
+  margin-top: -65px;
 }
 
 .header__content {
@@ -90,6 +150,11 @@
   background-image: url(../img/iphone-hand-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: 15% 5px;
+
+  @media #{$retina} {
+      background-image: url(../img/iphone-hand-mobile@2x.png);
+    }
+
 }
 
 .header__page-title {
@@ -99,15 +164,27 @@
   color: $white;
   text-align: center;
   width: 240px;
+  align-self: center;
+  &--photo {
+    padding-top: 70px;
+  }
+  &--contest {
+    padding-top: 90px;
+  }
 }
 
 .header__images--large {
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: auto,cover;
   height: 730px;
   width: 100%;
+
+  @media #{$retina} {
+      background-image: url(../img/bg-back-mobile@2x.jpg);
+    }
+
 }
 
 .header__slogan {
@@ -124,27 +201,54 @@
 
 @media #{$tablet} {
 
+  .header__images--large,
+  .header__images--small {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+
+    @media #{$retina} {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+    }
+
+  }
+  
+  .header__images--small {
+    height: 430px;
+  }
+  
+  .header__background-margin {
+    margin-top: -109px;
+  }
+  
   .header__images--large {
-    background-image: url(../img/back-tablet-1x.png);
+    height: 730px;
   }
 
   .header__wrapper {
     min-width: 660px;
     margin: 0 auto;
+    min-height: 110px;
   }
 
   .header__content {
     padding-top: 0;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: url(../img/iphone-hand-tablet.png);
+    background-image: url(../img/iphone-hand-tablet@1x.png);
     background-repeat: no-repeat;
-    background-position: 15% 20px;
+    background-position: 50% 100%;
     padding-left: 5%;
+    height: 630px;
+
+    @media #{$retina} {
+      background-image: url(../img/iphone-hand-tablet@2x.png);
+    }
+
   }
 
-  .header__logo-image {
+  .header__logo-img {
     padding-left: 40px;
+    width: 140px;
+    height: 40px;
 }
 
   .header__page-title {
@@ -158,20 +262,19 @@
 
   .header__page-title--contest {
     width: 500px;
-  }
-
-  .header__images--small {
-    height: 330px;
+    padding-top: 160px;
   }
 
   .header__slogan {
     display: flex;
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 40px;
   }
 
   .header__menu {
     margin: 0 auto;
+    height: 110px;
+    box-sizing: border-box;
   }
 
 }
@@ -187,17 +290,34 @@
 @media #{$desktop} {
 
   .header__images--large {
-    background-image: url(../img/back-desktop-jpg.png);
+    background-image: url(../img/bg-back-desktop@1x.jpg);
     height: 850px;
+
+    @media #{$retina} {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+    }
+
+  }
+
+  .header__images--small {
+    height: 395px;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+
+    @media #{$retina} {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+    }
   }
 
   .header__content {
-    background-image: url(../img/iphone-hand-desktop.png);
-    background-position: 120px 0;
+    background-image: url(../img/iphone-hand-desktop@1x.png);
     height: 645px;
-    padding-left: 10%;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media #{$retina} {
+      background-image: url(../img/iphone-hand-desktop@2x.png);
+    }
+
   }
 
   .header__logo-image {
@@ -206,7 +326,6 @@
 
   .header__wrapper {
     flex-wrap: nowrap;
-    min-width: 960px;
     justify-content: space-between;
     padding-top: 0;
     position: absolute;
@@ -224,6 +343,7 @@
     flex-basis: 620px;
     padding-left: 5%;
     padding-right: 5%;
+    align-items: center;
   }
 
   .header__list-item {
@@ -246,6 +366,11 @@
 
   .header__page-title--contest {
     width: 780px;
+  }
+
+  .header__page-title {
+    align-self: center;
+    padding-top: 150px;
   }
 
 }
