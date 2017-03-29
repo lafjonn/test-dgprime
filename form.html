@@ -11,7 +11,11 @@
       <div class="header__wrapper  absolute">
         <div class="header__menu">
           <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="http://placehold.it/147x40">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="header__logo-img" media="(min-width: 320px)" srcset="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            </picture>
           </a>
           <button class="header__dropdown-btn"></button>
         </div>
@@ -113,11 +117,11 @@
           <fieldset class="contest__check-section">
               <legend class="contest__subtitle  contest__subtitle--grey">С каким приложением путешествовали?</legend>
               <input class="contest__radio" type="radio" name="phone-os" id="ios" checked>
-              <label class="contest__checkbox-label" for="ios">Pink для iOS</label>
+              <label class="contest__radio-label" for="ios">Pink для iOS</label>
               <input class="contest__radio" type="radio" name="phone-os" id="android">
-              <label class="contest__checkbox-label" for="android">Pink на Android</label>
+              <label class="contest__radio-label" for="android">Pink на Android</label>
               <input class="contest__radio" type="radio" name="phone-os" id="win-phone">
-              <label class="contest__checkbox-label" for="win-phone">Windows Phone</label>
+              <label class="contest__radio-label" for="win-phone">Windows Phone</label>
             </fieldset>
           </div>
           <fieldset class="contest__user-text">

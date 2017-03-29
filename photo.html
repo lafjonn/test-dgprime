@@ -11,7 +11,11 @@
       <div class="header__wrapper  absolute">
         <div class="header__menu">
           <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="http://placehold.it/147x40">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="header__logo-img" media="(min-width: 320px)" srcset="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            </picture>
           </a>
           <button class="header__dropdown-btn"></button>
         </div>
@@ -55,7 +59,7 @@
               <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня - Мост" srcset="img/panorama-mobile@2x.jpg 2x">
             </picture>
             <div class="post__flag">Панорама дня</div>
-            <div class="post__text  post__text--main">
+            <div class="post__text-main">
               <div class="post__name-block">
                 <span class="post__username">Анна</span>
                 <span class="post__time">
@@ -63,7 +67,7 @@
                   <span class="post__half">)</span>
                 </span>
               </div>
-              <p class="post__usertext  post__usertext--main">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="post__usertext-main">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <div class="post__like-block  post__like-block--main">
                 <button class="post__add-like"></button>
                 <span class="post__like">Нравится: 215</span>
@@ -78,14 +82,14 @@
               <img src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль" srcset="img/photo-1-mobile@2x.jpg 2x">
             </picture>
             <div class="post__text  post__text--small">
-              <div class="post__name-block">
+              <div class="post__userblock">
                 <span class="post__username">Левон</span>
                 <span class="post__time">
                   <span class="post__half">(</span>5 часов назад
                   <span class="post__half">)</span>
                 </span>
+                <p class="post__usertext">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               </div>
-              <p class="post__usertext">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="post__like-block  post__like-block--short">
                 <button class="post__add-like"></button>
                 <span class="post__like">Нравится: 356</span>
@@ -101,13 +105,13 @@
             </picture>
             <div class="post__text  post__text--small">
               <div class="post__name-block">
-                <span class="post__username">Антон</span>
+                <span class="post__userblock">Антон</span>
                 <span class="post__time">
                   <span class="post__half">(</span>12 часов назад
                   <span class="post__half">)</span>
                 </span>
+                <p class="post__usertext">Соседи будут рады!</p>
               </div>
-              <p class="post__usertext">Соседи будут рады!</p>
               <div class="post__like-block  post__like-block--short">
                 <button class="post__add-like"></button>
                 <span class="post__like">Нравится: 666</span>
@@ -122,14 +126,14 @@
               <img src="img/photo-3-mobile@1x.jpg" alt="Окно" srcset="img/photo-3-mobile@2x.jpg 2x">
             </picture>
             <div class="post__text  post__text--small">
-              <div class="post__name-block">
+              <div class="post__userblock">
                 <span class="post__username">Борис</span>
                 <span class="post__time">
                   <span class="post__half">(</span>20 часов назад
                   <span class="post__half">)</span>
                 </span>
+                <p class="post__usertext">Здесь могла быть ваша цитата о высоком и вечном.</p>
               </div>
-              <p class="post__usertext">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="post__like-block  post__like-block--short">
                 <button class="post__add-like"></button>
                 <span class="post__like">Нравится: 215</span>
@@ -144,14 +148,14 @@
               <img src="img/photo-4-mobile@1x.jpg" alt="Кубанская бахча" srcset="img/photo-4-mobile@2x.jpg 2x">
             </picture>
             <div class="post__text  post__text--small">
-              <div class="post__name-block">
+              <div class="post__userblock">
                 <span class="post__username">Сергей</span>
                 <span class="post__time">
                   <span class="post__half">(</span>25 часов назад
                   <span class="post__half">)</span>
                 </span>
+                <p class="post__usertext">Самая кубанская в мире!</p>
               </div>
-              <p class="post__usertext">Самая кубанская в мире!</p>
               <div class="post__like-block  post__like-block--short">
                 <button class="post__add-like"></button>
                 <span class="post__like">Нравится: 4</span>
@@ -166,14 +170,14 @@
               <img src="img/photo-5-mobile@1x.jpg" alt="Пейзаж" srcset="img/photo-5-mobile@2x.jpg 2x">
             </picture>
             <div class="post__text  post__text--small">
-              <div class="post__name-block">
+              <div class="post__userblock">
                 <span class="post__username">Максим</span>
                 <span class="post__time">
                   <span class="post__half">(</span>40 часов назад
                   <span class="post__half">)</span>
                 </span>
+                <p class="post__usertext">Где снег-то?</p>
               </div>
-              <p class="post__usertext">Где снег-то?</p>
               <div class="post__like-block  post__like-block--short">
                 <button class="post__add-like"></button>
                 <span class="post__like">Нравится: 150</span>
@@ -188,14 +192,14 @@
               <img src="img/photo-6-mobile@1x.jpg" alt="Вид из самолета" srcset="img/photo-6-mobile@2x.jpg 2x">
             </picture>
             <div class="post__text  post__text--small">
-              <div class="post__name-block">
+              <div class="post__userblock">
                 <span class="post__username">Надежда</span>
                 <span class="post__time">
                   <span class="post__half">(</span>45 часов назад
                   <span class="post__half">)</span>
                 </span>
+                <p class="post__usertext">Всем GM и взаимные лайки!</p>
               </div>
-              <p class="post__usertext">Всем GM и взаимные лайки!</p>
               <div class="post__like-block  post__like-block--short">
                 <button class="post__add-like"></button>
                 <span class="post__like">Нравится: 2560</span>

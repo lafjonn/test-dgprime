@@ -298,6 +298,12 @@
     }
 
   }
+  
+  .header__logo-img {
+    width: 140px;
+    height: 40px;
+    padding-left: 0;
+  }
 
   .header__images--small {
     height: 395px;
@@ -313,6 +319,7 @@
     height: 645px;
     max-width: 1200px;
     margin: 0 auto;
+    background-position: 100% 100%;
 
     @media #{$retina} {
       background-image: url(../img/iphone-hand-desktop@2x.png);
@@ -320,8 +327,8 @@
 
   }
 
-  .header__logo-image {
-    padding-left: 40%;
+  .header__logo {
+    padding-right: 35px;
   }
 
   .header__wrapper {
@@ -332,22 +339,25 @@
   }
 
   .header__menu {
-    width: 100px;
     margin: 0;
+    justify-content: flex-end;
+    display: flex;
+    width: 300px;
   }
 
   .header__menu-list {
     flex-direction: row;
     justify-content: space-between;
     display: flex;
-    flex-basis: 620px;
-    padding-left: 5%;
-    padding-right: 5%;
+    flex-basis: 670px;
+    padding-right: 10%;
     align-items: center;
+    flex-shrink: 1;
   }
 
   .header__list-item {
     border: none;
+    flex-shrink: 1;
   }
 
   .header__dropdown-btn {
@@ -370,7 +380,16 @@
 
   .header__page-title {
     align-self: center;
-    padding-top: 150px;
+    padding-top: 130px;
+  }
+  
+  .header__slogan {
+    padding-top: 0;
+    font-size: 50px;
+    font-weight: 300;
+    height: 157px;
+    padding-bottom: 70px;
+    padding-left: 100px;
   }
 
 }

@@ -40,17 +40,22 @@
 
   .feature {
     width: 300px;
+    text-align: center;
+    margin-left: 40px;
+    padding-top: 30px;
   }
 
   .feature__title {
     font-size: 30px;
     line-height: 30px;
     width: 230px;
+    padding-bottom: 25px;
   }
 
   .feature__text {
     font-size: 18px;
     width: 240px;
+    line-height: 30px;
   }
 
 }

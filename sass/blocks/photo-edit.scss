@@ -264,6 +264,8 @@
 
   .photo-edit {
     width: 940px;
+    margin-bottom: 65px;
+    padding-bottom: 40px;
   }
 
   .photo-edit__form {
@@ -274,10 +276,19 @@
   
   .photo-edit__column {
     justify-content: center;
+    padding-left: 35px;
+    padding-right: 0;
+  }
+  
+  .photo-edit__icons {
+    height: 180px;
+    padding-right: 20px;
+    padding-top: 25px;
   }
   
   .photo-edit__scale-group {
     justify-content: center;
+    padding-left: 25px;
   }
 
   .photo-edit__scale-item {
@@ -295,8 +306,10 @@
 
   .photo-edit__buttons {
     flex-direction: row;
-    width: 410px;
+    width: 450px;
     justify-content: space-between;
+    padding-left: 35px;
+    padding-top: 75px;
   }
 
   .photo-edit__scale {
@@ -307,10 +320,6 @@
   .photo-edit__btn {
     width: 183px;
     box-sizing: border-box;
-  }
-  
-  .photo-edit__icons {
-    padding-top: 10px;
   }
 
   .photo-edit__icon--crop {

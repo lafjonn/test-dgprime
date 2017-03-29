@@ -276,12 +276,21 @@
 }
 
 @media #{$desktop} {
+  
+  .features__header {
+    padding-top: 60px;
+    padding-bottom: 17px;
+  }
+  
+  .features__caption--short {
+    width: 435px;
+  }
 
   .features__watch {
     background-size: 298px auto;
     width: 298px;
     height: 345px;
-    margin-top: 20px;
+    margin-top: 0;
     margin-right: 65px;
     margin-left: 10px;
   }
@@ -306,6 +315,8 @@
     width: 525px;
     padding-left: 0;
     margin-left: 0;
+    padding-top:80px;
+    height: 225px;
   }
 
   .features__timer {
