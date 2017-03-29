@@ -131,7 +131,7 @@
   .post--small:nth-child(odd) {
     padding-right: 20px;
   }
-  
+
   .post__text,
   .post__text-main {
     padding-top: 25px;
@@ -182,7 +182,7 @@
 }
 
 @media #{$desktop} {
-  
+
   .post__flag {
     top: 9%;
     right: 11%;
@@ -191,7 +191,7 @@
   .post--small:nth-child(odd) {
     padding-right: 0;
   }
-  
+
   .post--main {
     margin-bottom: 5px;
   }
@@ -213,22 +213,22 @@
   .post__img--main {
     width: 960px;
   }
-  
+
   .post__usertext {
     width: 240px;
   }
-  
+
   .post__usertext-main {
     flex-basis: 100%;
     font-size: 14px;
     font-weight: 400;
   }
-  
+
   .post__text--small {
     padding-top: 22px;
     justify-content: space-between;
   }
-  
+
   .post__like-block--short {
     height: 35px;
     align-self: flex-end;

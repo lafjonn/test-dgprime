@@ -68,11 +68,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
+
   .contacts__item {
     padding-bottom: 50px;
   }
-  
+
   .contacts__item:last-child {
     padding-bottom: 20px;
   }
@@ -80,11 +80,11 @@
 }
 
 @media #{$desktop} {
-  
+
   .contacts {
     padding-top: 85px;
   }
-  
+
   .contacts__items-block {
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -92,24 +92,24 @@
     margin: 0 auto;
     padding-top: 45px;
   }
-  
+
   .contacts__heading {
     font-size: 50px;
     width: 500px;
   }
-  
+
   .contacts__type {
     padding-bottom: 20px;
   }
-  
+
   .contacts__item--call {
     order: 1;
   }
-  
+
   .contacts__item--come {
     order: 2;
   }
-  
+
   .contacts__item--write {
     order: 3;
   }

@@ -326,11 +326,11 @@
 
 
 @media #{$tablet} {
-  
+
   .contest {
     margin-bottom: 35px;
   }
-  
+
   .contest__radio + label::before,
   .contest__checkbox + label::before {
     left: 60px;
@@ -368,7 +368,7 @@
     padding-bottom: 35px;
     box-sizing: border-box;
   }
-  
+
   .contest__contacts-item:last-child {
     padding-bottom: 5px;
     margin-bottom: 5px;
@@ -406,7 +406,7 @@
     width: 620px;
     margin: auto;
   }
-  
+
   .contest__check-section {
     margin-bottom: 15px;
   }
@@ -421,12 +421,12 @@
     padding-left: 120px;
     padding-bottom: 50px;
   }
-  
+
   .contest__checkbox-item {
     padding-top: 10px;
     padding-bottom: 41px;
   }
-  
+
   .contest__connect-wrapper {
     margin-top: -15px;
   }
@@ -513,7 +513,7 @@
 }
 
 @media #{$desktop} {
-  
+
   .contest {
     margin-bottom: 24px;
   }
@@ -554,18 +554,18 @@
     justify-content: space-between;
     padding-top: 25px;
   }
-  
+
   .contest__radio-label {
     padding-bottom: 45px;
     padding-top: 2px;
     padding-left: 130px;
   }
-  
+
   .contest__checkbox-label {
     padding-top: 2px;
     padding-left: 120px;
   }
-  
+
   .contest__connect-wrapper {
     justify-content: space-between;
   }
@@ -574,13 +574,13 @@
     width: 940px;
     margin-top: 30px;
   }
-  
+
   .contest__label--connect {
     padding-top: 5px;
     padding-bottom: 20px;
     padding-left: 15px;
   }
-  
+
   .contest__radio + label::before {
     left: 70px;
     top: 2px;
@@ -591,7 +591,7 @@
     padding-bottom: 0;
     margin-bottom: 25px;
   }
-  
+
   .contest__contacts-item:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -669,7 +669,7 @@
     justify-content: space-between;
     padding-top: 53px;
   }
-  
+
   .contest__subtitle--optional {
     padding-top: 38px;
     padding-bottom: 38px;
