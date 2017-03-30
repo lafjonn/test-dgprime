@@ -174,7 +174,7 @@
 
 @media #{$tablet} {
   
- .tariff {
+  .tariff {
     padding-top: 35px;
     padding-bottom: 10px;
   }
@@ -197,7 +197,7 @@
     box-sizing: border-box;
     text-align: center;
   }
-  
+
   .tariff__section {
     height: 46px;
   }
@@ -207,7 +207,7 @@
     box-sizing: border-box;
     padding: 0;
   }
-  
+
   .tariff__feature {
     display: flex;
     height: 46px;
@@ -254,7 +254,7 @@
   .tariff__price {
     font-size: 18px;
   }
-  
+
   .tariff__avaliability {
     float: none;
     margin: 0 auto;
@@ -263,7 +263,7 @@
 }
 
 @media #{$desktop} {
-  
+
   .tariff {
     padding-top: 66px;
   }
@@ -273,7 +273,7 @@
   .tariff__heading {
     width: 235px;
   }
-  
+
   .tariff__section {
     height: 60px;
   }
@@ -290,16 +290,16 @@
     width: 95px;
     height: 30px;
   }
-  
+
   .tariff__feature-text {
     font-size: 18px;
   }
-  
+
   .tariff__feature {
     padding-left: 23px;
     height: 60px;
   }
-  
+
   .tariff__price {
     font-size: 24px;
   }
