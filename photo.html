@@ -9,38 +9,40 @@
   <body class="page">
     <header class="header">
       <div class="header__wrapper  absolute">
-        <div class="header__menu">
-          <a class="header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="header__logo-img" media="(min-width: 320px)" srcset="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-            </picture>
-          </a>
-          <button class="header__dropdown-btn"></button>
+        <div class="header__inner">
+          <div class="header__menu">
+            <a class="header__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="header__logo-img" media="(min-width: 320px)" srcset="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+              </picture>
+            </a>
+            <button class="header__dropdown-btn"></button>
+          </div>
+          <ul class="header__menu-list  header__menu-list--open">
+            <li class="header__list-item header__list-item--active">
+              <a class="header__menu-link" href="index.html">
+                <span class="header__link-text">Главная</span>
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__menu-link  header__menu-link--current">
+                <span class="header__link-text  header__link-text--current">Фотографии</span>
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__menu-link" href="form.html">
+                <span class="header__link-text">Конкурс</span>
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__menu-link" href="https://htmlacademy.ru/">
+                <span class="header__link-text">HTML Academy</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="header__menu-list  header__menu-list--open">
-          <li class="header__list-item header__list-item--active">
-            <a class="header__menu-link" href="index.html">
-              <span class="header__link-text">Главная</span>
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__menu-link  header__menu-link--current" href="#">
-              <span class="header__link-text  header__link-text--current">Фотографии</span>
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__menu-link" href="form.html">
-              <span class="header__link-text">Конкурс</span>
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__menu-link" href="#">
-              <span class="header__link-text">HTML Academy</span>
-            </a>
-          </li>
-        </ul>
       </div>
       <div class="header__images  header__images--small">
         <h1 class="header__page-title  header__page-title--photo">Фотографии пользователей</h1>

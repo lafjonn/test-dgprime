@@ -6,6 +6,7 @@
   background-color: transparent;
   padding: 15px 25px;
   cursor: pointer;
+  text-decoration: none;
 
   &--white {
     @include btn($white);
