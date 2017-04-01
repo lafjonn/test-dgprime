@@ -11,11 +11,12 @@
   font-weight: 400;
   line-height: 18px;
   color: $darkgrey;
-  padding-right: 15px;
+  padding-right: 14px;
 }
 
 .copyright__logo-svg {
   fill: $pink;
+  margin-top: 4px;
 }
 
 .copyright__logo-svg:hover {
@@ -27,6 +28,13 @@
 }
 
 @media #{$tablet} {
+  .copyright__logo-svg {
+    margin-top: 17px;
+  }
+
+  .copyright__label {
+    margin-top: 12px;
+  }
 }
 
 
@@ -34,6 +42,7 @@
 
   .copyright__label {
     font-size: 18px;
+    margin-top: 10px;
   }
 
 }

@@ -14,9 +14,9 @@
 
 .review__quote {
   margin: 0;
-  padding-top: 20px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-top: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -38,13 +38,13 @@
 
   .review {
     flex-direction: column-reverse;
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
   .review__info {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   .review__quote {
@@ -54,7 +54,7 @@
 
   .review__name {
     font-size: 20px;
-    padding-top: 30px;
+    padding-top: 35px;
   }
 }
 

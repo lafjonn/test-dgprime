@@ -5,14 +5,15 @@
   flex-direction: column;
   align-items: center;
   padding-top: 25px;
-  width: 275px;
+  width: 290px;
   margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 .feature__title {
   font-size: 18px;
   font-weight: 700;
-  padding-bottom: 17px;
+  padding-bottom: 13px;
 }
 
 .feature__text {
@@ -27,11 +28,16 @@
     text-align: left;
     width: 310px;
     align-items: stretch;
-    padding-top: 23px;
+    padding-top: 31px;
+    padding-bottom: 0;
   }
 
   .feature__text {
-    padding-bottom: 5px;
+    padding-bottom: 2px;
+  }
+  
+  .feature__br {
+    display: none;
   }
 
 }
@@ -42,7 +48,7 @@
     width: 300px;
     text-align: center;
     margin-left: 40px;
-    padding-top: 30px;
+    padding-top: 35px;
   }
 
   .feature__title {
@@ -50,6 +56,10 @@
     line-height: 30px;
     width: 230px;
     padding-bottom: 25px;
+  }
+
+  .feature__br-tablet {
+    display: none;
   }
 
   .feature__text {

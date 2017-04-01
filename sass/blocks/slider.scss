@@ -17,12 +17,12 @@
 }
 
 .slider__controls {
-  width: 60px;
+  width: 62px;
   height: 12px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 32px;
   padding-bottom: 42px;
 }
 
@@ -50,8 +50,11 @@
 }
 
 @media #{$tablet} {
-  .slider::after {
-    border-top: 50px solid #fff;
+  .slider::before {
+    border-top: 55px solid #fff;
+  }
+  .slider__controls {
+    padding-bottom: 18px;
   }
 }
 

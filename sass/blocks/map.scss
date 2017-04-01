@@ -9,7 +9,8 @@
   overflow: hidden;
   width: 100%;
   @media #{$retina} {
-      background-image: url(../img/bg-map-mobile@2x.jpg);
+    background-image: url(../img/bg-map-mobile@2x.jpg);
+    background-size: 700px 848px;
   }
 }
 
@@ -30,7 +31,7 @@
   background-image: url(../img/icon-map-marker.svg);
   background-repeat: no-repeat;
   left: 45%;
-  top: 80%;
+  top: 50%;
 }
 
 @media #{$tablet} {
@@ -41,6 +42,7 @@
     background-position: 48% 63%;
     @media #{$retina} {
       background-image: url(../img/bg-map-tablet@2x.jpg);
+      background-size: 700px 848px;
     }
   }
 
@@ -64,6 +66,7 @@
     margin-bottom: 30px;
     @media #{$retina} {
       background-image: url(../img/bg-map-desktop@2x.jpg);
+      background-size: 1200px 976px;
     }
   }
 
