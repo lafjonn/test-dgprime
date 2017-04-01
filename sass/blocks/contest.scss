@@ -519,6 +519,32 @@
     margin: auto;
     width: 500px;
     padding: 0;
+    position: relative;
+    border-radius: 2px;
+  }
+
+  .contest__connect-item--phone::after,
+  .contest__connect-item--email::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 59px;
+    box-sizing: border-box;
+    width: 60px;
+    right: 2px;
+    top: -3px;
+    background-color: #e5e5e5;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .contest__connect-item--phone::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+  
+  .contest__connect-item--email::after {
+    background-image: url("../img/icon-mail.svg");
   }
 
   .contest__label--connect {
@@ -663,7 +689,8 @@
     padding-left: 15px;
   }
 
-  .contest__connect-item {
+  .contest__connect-item--phone::after {
+    top: 10px;
   }
 
   .contest__radio + label::before {
