@@ -3,6 +3,10 @@
   flex-direction: column-reverse;
 }
 
+.slider__slides-block {
+  position: relative;
+}
+
 .slider__input {
   display: none;
 }
@@ -24,6 +28,41 @@
   justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 42px;
+}
+
+.slider__nav {
+  display: none;
+}
+
+.slider__arrow {
+  position: absolute;
+  padding: 0;
+  display: block;
+  border: none;
+  top: 205px;
+  width: 22px;
+  height: 42px;
+  background: none;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 3;
+  fill: #bec2c7;
+
+  &:hover {
+    fill: #7e868f;
+  }
+
+  &:active {
+    fill: #e9ebec;
+  }
+}
+
+.slider__arrow--prev {
+  left: 5px;
+}
+
+.slider__arrow--next {
+  right: 5px;
 }
 
 .slider__label {
@@ -61,5 +100,19 @@
 @media #{$desktop} {
   .slider::after {
     border-top: 95px solid #fff;
+  }
+
+  .slider__nav {
+    display: block;
+  }
+
+  .slider__slides-block {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .slider__inner {
+    width: 940px;
+    margin: 0 auto;
   }
 }

@@ -30,6 +30,35 @@
   padding-left: 20px;
 }
 
+.header__logo-svg {
+  width: 75px;
+  height: 22px;
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+  
+  @media #{$tablet} {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.header__logo-icon--mobile {
+  display: block;
+}
+
+.header__logo-icon--tablet,
+.header__logo-icon--desktop {
+  display: none;
+}
+
 .header__menu {
   display: flex;
   justify-content: space-between;
@@ -229,6 +258,16 @@
 
   }
 
+  .header__logo-icon--mobile {
+    display: none;
+  }
+
+  .header__logo-icon--tablet {
+    display: block;
+    width: 150px;
+    height: 40px;
+  }
+
   .header__images--small {
     height: 438px;
   }
@@ -338,6 +377,14 @@
       background-size: 2560px 853px;
     }
 
+  }
+
+  .header__logo-icon--tablet {
+    display: none;
+  }
+
+  .header__logo-icon--desktop {
+    display: block;
   }
 
   .header__page-title--photo {

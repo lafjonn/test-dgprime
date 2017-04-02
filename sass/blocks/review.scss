@@ -77,30 +77,6 @@
     width: 690px;
   }
 
-  .review__quote::before {
-    content: "";
-    position: absolute;
-    top: 180px;
-    left: -100px;
-    width: 22px;
-    height: 41px;
-    background-image: url(../img/icon-review-arrow-left.svg);
-    background-repeat: no-repeat;
-    background-size: 22px auto;
-  }
-
-  .review__quote::after {
-    content: "";
-    position: absolute;
-    top: 180px;
-    right: -100px;
-    width: 22px;
-    height: 41px;
-    background-image: url(../img/icon-review-arrow-right.svg);
-    background-repeat: no-repeat;
-    background-size: 22px auto;
-  }
-
   .review__name {
     font-size: 24px;
     padding-top: 35px;

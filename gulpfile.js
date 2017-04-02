@@ -58,7 +58,7 @@ gulp.task("images", function() {
 
 gulp.task("inject-svg", function() {
   var svgs = gulp
-    .src("img/*.svg")
+    .src("img/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({inlineSvg: true}));
 
