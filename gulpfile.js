@@ -48,7 +48,7 @@ gulp.task("style-dev", function() {
 });
 
 gulp.task("images", function() {
-  return gulp.src("build/img/**/*.{png,jpg,gif}")
+  return gulp.src("build/img/**/*.{jpg,gif}")
   .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
@@ -119,7 +119,6 @@ gulp.task("build", function(fn) {
     "copy",
     "style",
     "images",
-    "symbols",
     fn
   );
 });
