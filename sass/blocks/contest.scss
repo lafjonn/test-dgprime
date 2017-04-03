@@ -117,15 +117,15 @@
 }
 
 .contest__input::-ms-input-placeholder,
-.contest__experience::-webkit-input-placeholder,
+.contest__experience:-ms-input-placeholder,
 .contest__input-connect::-ms-input-placeholder {
   color: $darkgrey;
   font-family: $font;
 }
 
 .contest__input::-moz-placeholder,
-.contest__experience::-webkit-input-placeholder,
-.contest__input-connect::-webkit-input-placeholder {
+.contest__experience::-moz-placeholder,
+.contest__input-connect::-moz-placeholder {
   color: $darkgrey;
   font-family: $font;
 }
@@ -684,11 +684,12 @@
 
   .contest__checkbox-label {
     padding-top: 0px;
-    padding-left: 115px;
+    padding-left: 121px;
   }
 
   .contest__checkbox + label::before {
-    left: 55px;
+    left: 62px;
+    top: -3px;
   }
 
   .contest__connect-wrapper {
@@ -791,10 +792,6 @@
     padding-bottom: 12px;
   }
 
-  .contest__checkbox-column:last-child {
-    margin-left: 10px;
-  }
-
   .contest__checkbox-item {
     padding-top: 0;
     padding-bottom: 0;
@@ -833,6 +830,10 @@
   .contest__subtitle-experience  {
     padding-top: 40px;
     padding-bottom: 36px;
+  }
+
+  .contest__experience {
+    padding-top: 10px;
   }
 
   .contest__note {
