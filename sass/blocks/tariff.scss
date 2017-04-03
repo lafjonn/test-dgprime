@@ -29,21 +29,38 @@
   }
 }
 
-.tariff__hit {
+.tariff__heading--hit {
+  background-color: $darkblue;
+  background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
-  width: 102px;
-  height: 30px;
-  position: absolute;
-  transform: rotate(-45deg);
-  font-weight: 600;
-  line-height: 30px;
-  font-size: 14px;
-  text-transform: uppercase;
-  background-color: $pink;
-  text-align: center;
-  top: 12px;
-  left: -28px;
+  background-position: 0 0;
+  background-size: 74px 73px;
+
+  &::after {
+    content: "Хит";
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    display: block;
+    color: $white;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  @media #{$tablet-only} {
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-size: 61px 61px;
+
+    &::after {
+      top: 7px;
+      left: 7px;
+    }
+  }
 }
+
 
 .tariff__empty-cell {
   background-color: $lightgrey;
@@ -249,13 +266,6 @@
     display: none;
   }
 
-  .tariff__hit {
-    width: 90px;
-    height: 28px;
-    top: 4px;
-    left: -25px;
-  }
-
   .tariff__title {
     font-size: 16px;
   }
@@ -299,13 +309,6 @@
 
   .tariff__heading {
     height: 98px;
-  }
-
-  .tariff__hit {
-    width: 110px;
-    height: 30px;
-    top: 10px;
-    left: -30px;
   }
 
   .tariff__feature-text {
