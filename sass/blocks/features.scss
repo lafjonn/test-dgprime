@@ -6,9 +6,24 @@
   background-color: $white;
   display: flex;
   flex-direction: column;
-  min-height: 250px;
   padding-top: 30px;
   width: 100%;
+  align-items: center;
+}
+
+.features__wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.features__wrapper::before {
+  content: "";
+  display: block;
+  border-top: 35px solid #fff;
+  border-right: calc(100vw - 17px) solid transparent;
+  content: "";
+  top: 452px;
 }
 
 .features__caption {
@@ -17,80 +32,128 @@
   color: $darkgrey;
   text-align: center;
   margin: 15px;
+  margin-top: 11px;
+  line-height: 30px;
+  width: 320px;
   @media #{$tablet} {
     font-size: 40px;
   }
 }
 
+.features__caption--short {
+  margin-bottom: 30px;
+}
+
 .features__column {
   display: flex;
   flex-direction: column;
-  padding-bottom: 45px;
+  padding-top: 23px;
+  padding-bottom: 32px;
+  align-items: center;
   @media (min-width: 660px) {
     order: 1;
+    width: 300px;
+    margin-top: -33px;
+    padding-bottom: 0;
+    margin-left: 40px;
   }
   @media #{$desktop} {
     flex-direction: row;
-    width: 100%;
+    width: 960px;
+    justify-content: space-around;
+    padding-bottom: 55px;
+    margin: 0 auto;
   }
 }
 
 .features__images {
   display: flex;
   justify-content: center;
+  @media #{$tablet} {
+  }
   @media #{$desktop} {
     width: 100%;
+    justify-content: center;
   }
+}
+
+.features__image {
+  background-size: auto cover;
+  background-repeat: no-repeat;
 }
 
 .features__image--pink-smile {
   height: 280px;
   width: 157px;
   background-image: url(../img/iphone-screen-mobile@1x.png);
-  background-repeat: no-repeat;
   background-position: 50% 0;
+
+  @media #{$retina} {
+    background-image: url(../img/iphone-screen-mobile@2x.png);
+    background-size: 157px 320px;
+  }
+
   @media #{$tablet} {
     width: 241px;
     height: 480px;
-    background-image: url(../img/iphone-tablet-pink-smile.png);
-    padding-left: 40px;
-    padding-right: 40px;
+    background-image: url(../img/iphone-screen-3-tablet@1x.png);
+    padding-left: 15px;
+    padding-right: 15px;
     align-self: flex-start;
+    margin-left: 18px;
+
+    @media #{$retina} {
+      background-image: url(../img/iphone-screen-3-tablet@2x.png);
+      background-size: 268px 481px;
+    }
+
   }
   @media #{$desktop} {
     height: 300px;
     width: 320px;
-    background-image: url(../img/iphone-desktop-pinksmile.png);
-    padding-left: 70px;
-    padding-right: 70px;
+    background-image: url(../img/iphone-screen-3-desktop@1x.png);
+    padding: 0;
+
+    @media #{$retina} {
+      background-image: url(../img/iphone-screen-3-desktop@2x.png);
+      background-size: 292px 302px;
+    }
+
   }
 }
 
 .features__image--grey {
   display: none;
-  background-image: url(../img/iphone-desktop-grey.png);
-  background-repeat: no-repeat;
   background-position: 50% 0;
   @media #{$desktop} {
     display: block;
     height: 300px;
     width: 320px;
-    padding-left: 70px;
-    padding-right: 70px;
+    background-image: url(../img/iphone-screen-1-desktop@1x.png);
+
+    @media #{$retina} {
+      background-image: url(../img/iphone-screen-1-desktop@2x.png);
+      background-size: 292px 302px;
+    }
+
   }
 }
 
 .features__image--pink {
   display: none;
-  background-image: url(../img/iphone-desktop-pink.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
   @media #{$desktop} {
     display: block;
+    background-image: url(../img/iphone-screen-2-desktop@1x.png);
     height: 300px;
     width: 320px;
-    padding-left: 70px;
-    padding-right: 70px;
+
+    @media #{$retina} {
+      background-image: url(../img/iphone-screen-2-desktop@2x.png);
+      background-size: 292px 302px;
+    }
+
   }
 }
 
@@ -98,14 +161,6 @@
   display: none;
   width: 100%;
   height: 395px;
-}
-
-.features__time-content {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  padding-top: 100px;
-  padding-right: 55px;
 }
 
 .features__time-caption {
@@ -135,41 +190,214 @@
   display: none;
 }
 
+.feature__br-tablet {
+  display: none;
+}
+
 @media #{$tablet} {
 
   .features__time {
     display: flex;
     order: 2;
-    justify-content: flex-end;
-    background-image: url(../img/timer-tablet.png);
-    background-repeat: no-repeat;
-    background-position: 10% 50%;
+    background-color: $white;
+    width: 100%;
   }
 
-  .wrapper {
+  .features__caption {
+    margin: 0;
+  }
+
+  .features__caption--long {
+    width: 100%;
+  }
+
+  .feature__br-tablet {
+    display: block;
+  }
+
+  .features__column-time {
+    order: 1;
+    width: 300px;
+    margin-top: -33px;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+
+  .features__caption-part {
+    display: block;
+  }
+
+  .features__time-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .features__watch {
+    background-image: url(../img/icon-timer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 238px auto;
+    width: 238px;
+    height: 276px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .features__timer {
+    color: $pink;
+    width: 174px;
+    height: 174px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 149px;
+    border: 14px solid $pink;
+    border-radius: 50%;
+    margin-top: 31px;
+    margin-left: 17px;
   }
 
   .features__time-content {
-    padding-right: 15px;
-}
+    padding-top: 130px;
+    width: 300px;
+  }
+
+  .features__time-content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+  }
+
+  .features__time-caption {
+    padding-bottom: 12px;
+  }
+
+  .features__time-text {
+    padding-bottom: 10px;
+  }
+
+  .features__inner {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .features__wrapper::before {
+    border-top: 50px solid #fff;
+  }
+
+  .features__images {
+    margin-top: -50px;
+  }
+
+  .features__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 27px;
+  }
+
+  .features__caption--short {
+    width: 500px;
+    padding-bottom: 50px;
+    line-height: 47px;
+    padding-top: 11px;
+  }
 
 }
 
 @media #{$desktop} {
 
-  .features__time {
-    background-image: url(../img/timer-desktop.png);
+  .features__header {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+
+  .features__inner {
+    width: 990px;
+    flex-direction: column;
+  }
+
+  .features__caption {
+    line-height: 56px;
+  }
+
+  .features__caption--long {
+    width: 760px;
+  }
+
+  .features__caption--short {
+    width: 435px;
+  }
+
+  .features__watch {
+    background-size: 298px auto;
+    width: 298px;
+    height: 345px;
+    margin-top: 0;
+    margin-right: 65px;
+    margin-left: 14px;
+  }
+
+  .features__image--pink-smile {
+    margin-left: 0;
   }
 
   .features__br-tablet {
     display: none;
   }
 
+  .features__caption-part {
+    display: inline;
+  }
+
+  .features__time-wrapper {
+    justify-content: flex-start;
+    padding-left: 0;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .features__time {
+    background-color: $lightgrey;
+    height: 430px;
+  }
+
   .features__time-content {
-    width: 530px;
-    padding-right: 10px;
+    width: 526px;
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 135px;
+    height: 225px;
+  }
+
+  .features__time-caption {
+    padding-bottom: 20px;
+  }
+
+  .features__time-text {
+    line-height: 30px;
+    padding-bottom: 33px;
+  }
+
+  .features__timer {
+    line-height: 187px;
+    font-size: 120px;
+    width: 253px;
+    height: 253px;
+    box-sizing: border-box;
+    border: 17px solid $pink;
+    margin-top: 50px;
   }
 
   .features__time-text,
@@ -190,6 +418,14 @@
     width: 730px;
     margin: 0 auto;
     padding-bottom: 70px;
+  }
+
+  .features__wrapper::before {
+    border-top: 95px solid #fff;
+  }
+
+  .features__images {
+    margin-top: -95px;
   }
 
 }

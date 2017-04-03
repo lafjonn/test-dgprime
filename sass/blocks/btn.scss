@@ -6,6 +6,7 @@
   background-color: transparent;
   padding: 15px 25px;
   cursor: pointer;
+  text-decoration: none;
 
   &--white {
     @include btn($white);
@@ -18,4 +19,13 @@
   &--grey {
     @include btn($grey);
   }
+}
+
+.btn:hover {
+  background-color: $white;
+  color: $pink;
+}
+
+.btn:active {
+  color: #f1becc;
 }

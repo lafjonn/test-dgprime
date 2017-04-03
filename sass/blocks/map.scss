@@ -1,46 +1,53 @@
 .map {
   height: 200px;
-  background-image: url(../../img/map.png);
+  background-image: url(../img/bg-map-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
+  margin: 0 auto;
   position: relative;
-  z-index: -2;
+  overflow: hidden;
+  width: 100%;
+  @media #{$retina} {
+    background-image: url(../img/bg-map-mobile@2x.jpg);
+    background-size: 700px 848px;
+  }
 }
 
-.map__mask {
-  height: 200px;
-  background-image: url(../../img/map-mask-mobile.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  width: 100%;
+.map::before {
+  content: "";
   position: absolute;
-  top: -90px;
-  left: 0;
-  z-index: -1;
+  display: block;
+  border-top: 32px solid #fff;
+  border-right: 50vw solid transparent;
+  border-left: 50vw solid transparent;
+  z-index: 1;
 }
 
 .map__marker {
   position: absolute;
   width: 40px;
   height: 40px;
-  background-image: url(../../img/icon-map-marker.svg);
+  background-image: url(../img/icon-map-marker.svg);
   background-repeat: no-repeat;
   left: 45%;
-  top: 46%;
+  top: 50%;
 }
 
 @media #{$tablet} {
 
   .map {
-    height: 378px;
-    background-position: center;
+    height: 376px;
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+    background-position: 48% 63%;
+    @media #{$retina} {
+      background-image: url(../img/bg-map-tablet@2x.jpg);
+      background-size: 700px 848px;
+    }
   }
 
-  .map__mask {
-    height: 140px;
-    background-image: url(../../img/mask-tablet.png);
-    top: -60px;
-    background-size: cover;
+  .map::before {
+    border-top: 75px solid #fff;
   }
 
   .map__marker {
@@ -53,17 +60,23 @@
 @media #{$desktop} {
 
   .map {
-    height: 500px;
-  }
-
-  .map__mask {
-    height: 200px;
-    background-image: url(../../img/mask-desktop.png);
-    background-size: cover;
+    height: 502px;
+    background-position: center;
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+    margin-bottom: 30px;
+    margin-top: -2px;
+    @media #{$retina} {
+      background-image: url(../img/bg-map-desktop@2x.jpg);
+      background-size: 1200px 976px;
+    }
   }
 
   .map__marker {
-    top: 60%;
+    top: 61%;
+  }
+
+  .map::before {
+  border-top: 105px solid #fff;
   }
 
 }

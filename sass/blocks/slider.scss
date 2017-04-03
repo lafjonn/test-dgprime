@@ -1,3 +1,130 @@
+.slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.slider__slides-block {
+  position: relative;
+}
+
 .slider__input {
   display: none;
+}
+
+.slider::before {
+  content: "";
+  display: block;
+  border-top: 28px solid #fff;
+  border-right: calc(100vw - 17px) solid $lightgrey;
+  content: "";
+  top: 452px;
+}
+
+.slider__controls {
+  width: 62px;
+  height: 12px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 42px;
+}
+
+.slider__nav {
+  display: none;
+}
+
+.slider__arrow {
+  position: absolute;
+  padding: 0;
+  display: block;
+  border: none;
+  top: 205px;
+  width: 22px;
+  height: 42px;
+  background: none;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 3;
+  fill: #bec2c7;
+
+  &:hover {
+    fill: #7e868f;
+  }
+
+  &:active {
+    fill: #e9ebec;
+  }
+}
+
+.slider__arrow--prev {
+  left: 5px;
+}
+
+.slider__arrow--next {
+  right: 5px;
+}
+
+.slider__label {
+  width: 6px;
+  height: 6px;
+  border: 3px solid $lightgrey;
+  border-radius: 50%;
+  background-color: #b5b9be;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slider__label:hover {
+  background-color: #7e868f;
+}
+
+.slider__label:active {
+  background-color: #e9ebec;
+}
+
+.slider__controls .slider__label[for="review-1"] {
+  background-color: $lightgrey;
+  border: 3px solid $darkblue;
+}
+
+@media #{$tablet} {
+  .slider::before {
+    border-top: 55px solid #fff;
+  }
+  .slider__controls {
+    padding-bottom: 18px;
+  }
+}
+
+@media #{$desktop} {
+  .slider::before {
+    border-top: 80px solid #fff;
+  }
+
+  .slider__nav {
+    display: block;
+  }
+
+  .slider__slides-block {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .slider__inner {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .slider__arrow--prev {
+    left: 0;
+  }
+
+  .slider__inner {
+    display: none;
+  }
+
+  .slider__item {
+    padding-bottom: 38px;
+  }
 }

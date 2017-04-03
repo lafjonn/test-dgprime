@@ -5,6 +5,7 @@
   flex-direction: column;
   padding-bottom: 20px;
   margin: 0 auto;
+  margin-bottom: 43px;
 }
 
 .photo-edit__form {
@@ -25,24 +26,71 @@
 .photo-edit__icons {
   display: flex;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 37px;
+  margin-bottom: 33px;
+  width: 210px;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .photo-edit__icon {
-  width: 20px;
-  height: 20px;
-  background-color: $pink;
-  margin-left: 10px;
+  cursor: pointer;
+  background-repeat: no-repeat;
 }
 
 .photo-edit__scale {
-  width: 240px;
+  width: 242px;
   height: 2px;
   background-color: $darkblue;
   margin: auto;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
+}
+
+.photo-edit__icon--crop {
+  background-image: url(../img/icon-editor-crop-grey.svg);
+  width: 44px;
+  height: 44px;
+}
+
+.photo-edit__icon--crop-active {
+  background-image: url(../img/icon-editor-crop-pink.svg);
+  width: 44px;
+  height: 44px;
+}
+
+.photo-edit__icon--fill {
+  background-image: url(../img/icon-editor-fill-grey.svg);
+  width: 48px;
+  height: 43px;
+  margin-top: 3px;
+}
+
+.photo-edit__icon--fill-active {
+  background-image: url(../img/icon-editor-fill-pink.svg);
+  width: 48px;
+  height: 43px;
+  margin-top: 3px;
+}
+
+.photo-edit__icon--contrast {
+  background-image: url(../img/icon-editor-contrast-grey.svg);
+  width: 32px;
+  height: 32px;
+  margin-right: 13px;
+  margin-top: 5px;
+}
+
+.photo-edit__icon--contrast-active {
+  background-image: url(../img/icon-editor-contrast-pink.svg);
+  width: 32px;
+  height: 32px;
+  margin-right: 13px;
+  margin-top: 5px;
+}
+
+.photo-edit__scale-item {
+  margin-top: 4px;
 }
 
 .photo-edit__scale-item--fill,
@@ -59,21 +107,33 @@
   border: 2px solid $pink;
   border-radius: 50%;
   top: -6px;
-  left: 70%;
   z-index: 1;
   cursor: pointer;
+}
+
+.photo-edit__range--crop {
+  left: 79%;
+}
+
+.photo-edit__range--fill {
+  left: 20%;
+}
+
+.photo-edit__range--contrast {
+  left: 50%;
 }
 
 .photo-edit__border {
   width: 100%;
   height: 1px;
   background-color: $grey;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .photo-edit__buttons {
   display: flex;
   flex-direction: column;
+  padding-right: 6px;
 }
 
 .photo-edit__btn {
@@ -87,6 +147,8 @@
 
   .photo-edit {
     width: 700px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .photo-edit__form {
@@ -104,15 +166,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding-top: 15px;
+    margin-top: 10px;
+    padding-right: 20px;
   }
 
   .photo-edit__icons {
     flex-direction: column;
-    height: 190px;
+    height: 207px;
     padding: 10px;
+    padding-right: 25px;
     justify-content: space-between;
     margin: 0;
+    padding-top: 29px;
+    width: 60px;
   }
 
   .photo-edit__icon {
@@ -122,28 +188,88 @@
   .photo-edit__scale-group {
     display: flex;
     flex-direction: column;
-    height: 190px;
+    height: 210px;
     justify-content: space-between;
   }
 
+  .photo-edit__scale {
+    margin-top: 27px;
+    margin-bottom: 20px;
+  }
+
   .photo-edit__scale-item {
-    padding-top: 20px;
+    height: 50px;
+    position: relative;
+    padding-top: 14px;
   }
 
   .photo-edit__border {
     width: 275px;
+    position: absolute;
+    bottom: 0;
+    left: -34px;
+    margin: 0;
   }
 
   .photo-edit__buttons {
     display: flex;
     flex-direction: column;
-    height: 134px;
-    padding-top: 65px;
+    height: 160px;
+    padding-top: 70px;
+    padding-right: 0;
+    width: 260px;
+    margin-right: -5px;
   }
 
   .photo-edit__img {
     width: 300px;
     height: 400px;
+    margin-top: 40px;
+  }
+
+  .photo-edit__icon--crop {
+    background-image: url(../img/icon-editor-crop-pink.svg);
+    width: 22px;
+    height: 22px;
+    margin-top: 5px;
+  }
+
+  .photo-edit__icon--crop-active {
+    width: 22px;
+    height: 22px;
+    margin-top: 5px;
+  }
+
+  .photo-edit__icon--fill {
+    background-image: url(../img/icon-editor-fill-pink.svg);
+    width: 24px;
+    height: 22px;
+  }
+
+  .photo-edit__icon--fill-active {
+    width: 24px;
+    height: 22px;
+  }
+
+  .photo-edit__icon--contrast {
+    background-image: url(../img/icon-editor-contrast-pink.svg);
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+  }
+
+  .photo-edit__icon--contrast-active {
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+  }
+
+  .photo-edit__scale {
+    width: 202px;
+  }
+
+  .photo-edit__btn {
+    width: 260px;
   }
 
 }
@@ -152,6 +278,8 @@
 
   .photo-edit {
     width: 940px;
+    margin-bottom: 65px;
+    padding-bottom: 40px;
   }
 
   .photo-edit__form {
@@ -160,28 +288,93 @@
     box-sizing: border-box;
   }
 
-  .photo-edit__icon {
-    width: 40px;
-    height: 40px;
+  .photo-edit__column {
+    justify-content: center;
+    padding-left: 35px;
+    padding-right: 0;
+  }
+
+  .photo-edit__icons {
+    height: 218px;
+    padding-right: 0;
+    padding-top: 25px;
+    margin-left: 5px;
+  }
+
+  .photo-edit__scale-group {
+    justify-content: center;
+    padding-left: 25px;
+  }
+
+  .photo-edit__scale-item {
+    height: 63px;
+    position: relative;
+    align-items: flex-end;
+    margin-top: 20px;
   }
 
   .photo-edit__border {
     width: 410px;
+    position: absolute;
+    bottom: -15px;
+    left: -80px;
   }
 
   .photo-edit__buttons {
     flex-direction: row;
-    width: 410px;
+    width: 450px;
     justify-content: space-between;
+    padding-left: 35px;
+    padding-top: 64px;
   }
 
   .photo-edit__scale {
     width: 288px;
+    margin-top: 15px;
+    margin-left: 15px;
   }
 
   .photo-edit__btn {
     width: 183px;
+    height: 48px;
+    line-height: 15px;
     box-sizing: border-box;
+  }
+
+  .photo-edit__icon--crop {
+    width: 44px;
+    height: 44px;
+    margin-top: 1px;
+    margin-left: -5px;
+  }
+
+  .photo-edit__icon--crop-active {
+    width: 44px;
+    height: 44px;
+    margin-top: 1px;
+    margin-left: -5px;
+  }
+
+  .photo-edit__icon--fill {
+    width: 48px;
+    height: 43px;
+    margin-top: 1px;
+  }
+
+  .photo-edit__icon--fill-active {
+    width: 48px;
+    height: 43px;
+    margin-top: 1px;
+  }
+
+  .photo-edit__icon--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .photo-edit__icon--contrast-active {
+    width: 32px;
+    height: 32px;
   }
 
 }
