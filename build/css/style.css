@@ -691,8 +691,7 @@ template {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
   margin-bottom: 55px;
 }
 
@@ -711,8 +710,7 @@ template {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
 }
 
 .contest__label {
@@ -896,8 +894,7 @@ template {
   background-color: #f2f2f2;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
 }
 
 .contest__radio-label {
@@ -1115,8 +1112,7 @@ template {
     padding-top: 50px;
   }
   .contest__form {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1386,8 +1382,7 @@ template {
         align-self: flex-end;
   }
   .contest__background-block--phone-os {
-    -ms-flex-preferred-size: 435px;
-        flex-basis: 435px;
+    width: 435px;
     margin-top: 0;
   }
   .contest__check-section {
@@ -1430,8 +1425,7 @@ template {
     margin-bottom: 20px;
   }
   .contest__check-section--goals {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
   }
   .contest__checkbox-column {
     display: -ms-flexbox;
@@ -1463,8 +1457,7 @@ template {
     height: 128px;
   }
   .contest__submit-block {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
     -ms-flex-pack: justify;
         justify-content: space-between;
     padding-top: 60px;
@@ -1668,8 +1661,7 @@ template {
   -ms-flex-align: center;
       align-items: center;
   padding-top: 25px;
-  width: 290px;
-  margin: 0 auto;
+  width: 300px;
   padding-bottom: 5px;
 }
 
@@ -1737,6 +1729,8 @@ template {
       flex-direction: column;
   padding-top: 30px;
   width: 100%;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .features__wrapper {
@@ -1764,6 +1758,7 @@ template {
   margin: 15px;
   margin-top: 11px;
   line-height: 30px;
+  width: 320px;
 }
 
 @media (min-width: 660px) {
@@ -1783,6 +1778,8 @@ template {
       flex-direction: column;
   padding-top: 23px;
   padding-bottom: 32px;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 @media (min-width: 660px) {
@@ -2067,6 +2064,7 @@ template {
   .features__header {
     padding-top: 40px;
     padding-bottom: 25px;
+    width: 100%;
   }
   .features__inner {
     width: 990px;
@@ -2075,6 +2073,9 @@ template {
   }
   .features__caption {
     line-height: 56px;
+  }
+  .features__caption--long {
+    width: 731px;
   }
   .features__caption--short {
     width: 435px;
@@ -2738,8 +2739,7 @@ template {
         justify-content: space-between;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: 670px;
-        flex-basis: 670px;
+    width: 670px;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-negative: 1;
@@ -3237,9 +3237,12 @@ template {
 .photo-page__wrapper {
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
+  max-width: 1200px;
   display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
@@ -3254,7 +3257,6 @@ template {
   line-height: 30px;
   color: #283645;
   width: 250px;
-  margin: auto;
   padding-top: 45px;
   padding-bottom: 47px;
   -ms-flex-item-align: center;
@@ -3268,7 +3270,6 @@ template {
   line-height: 30px;
   color: #283645;
   width: 255px;
-  margin: auto;
   padding-top: 45px;
   padding-bottom: 41px;
   -ms-flex-item-align: center;
@@ -3429,8 +3430,7 @@ template {
 }
 
 .post__like-block--short {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
 }
 
 .post__userblock {
@@ -3550,8 +3550,7 @@ template {
     min-height: 160px;
   }
   .post__usertext-main {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
     font-size: 14px;
     font-weight: 400;
   }
@@ -3589,7 +3588,6 @@ template {
 }
 
 .review__quote {
-  margin: 0;
   padding-top: 15px;
   padding-left: 21px;
   padding-right: 21px;
@@ -4020,6 +4018,8 @@ template {
   .tariff {
     padding-top: 35px;
     padding-bottom: 10px;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .tariff__section--feature,
   .tariff__empty-cell {
@@ -4074,7 +4074,6 @@ template {
     width: 620px;
     height: 221px;
     box-sizing: border-box;
-    margin: 0 auto;
     transform: none;
   }
   .tariff__label {

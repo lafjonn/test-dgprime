@@ -1,6 +1,9 @@
 .photo-page__wrapper {
   flex-direction: column;
-  flex-basis: 100%;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
   @include center();
 }
 
@@ -10,7 +13,6 @@
   line-height: 30px;
   color: $darkgrey;
   width: 250px;
-  margin: auto;
   padding-top: 45px;
   padding-bottom: 47px;
   align-self: center;
@@ -22,7 +24,6 @@
   line-height: 30px;
   color: $darkgrey;
   width: 255px;
-  margin: auto;
   padding-top: 45px;
   padding-bottom: 41px;
   align-self: center;

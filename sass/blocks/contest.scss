@@ -1,7 +1,7 @@
 .contest {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  width: 100%;
   margin-bottom: 55px;
 }
 
@@ -18,7 +18,7 @@
 .contest__form {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  width: 100%;
 }
 
 .contest__label {
@@ -195,7 +195,7 @@
 .contest__background-block {
   background-color: $lightgrey;
   display: flex;
-  flex-basis: 100%;
+  width: 100%;
 }
 
 .contest__radio-label {
@@ -412,7 +412,7 @@
   }
 
   .contest__form {
-    flex-basis: 100%;
+    width: 100%;
     display: flex;
   }
 
@@ -716,7 +716,7 @@
   }
 
   .contest__background-block--phone-os {
-    flex-basis: 435px;
+    width: 435px;
     margin-top: 0;
   }
 
@@ -763,7 +763,7 @@
   }
 
   .contest__check-section--goals {
-    flex-basis: 100%;
+    width: 100%;
   }
 
   .contest__checkbox-column {
@@ -798,7 +798,7 @@
   }
 
   .contest__submit-block {
-    flex-basis: 100%;
+    width: 100%;
     justify-content: space-between;
     padding-top: 60px;
   }
