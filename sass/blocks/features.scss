@@ -207,7 +207,23 @@
     margin: 0;
   }
 
+  .features__caption--long {
+    width: 100%;
+  }
+
   .feature__br-tablet {
+    display: block;
+  }
+
+  .features__column-time {
+    order: 1;
+    width: 300px;
+    margin-top: -33px;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+
+  .features__caption-part {
     display: block;
   }
 
@@ -341,6 +357,10 @@
     display: none;
   }
 
+  .features__caption-part {
+    display: inline;
+  }
+
   .features__time-wrapper {
     justify-content: flex-start;
     padding-left: 0;
@@ -357,16 +377,17 @@
     width: 526px;
     padding-left: 0;
     margin-left: 0;
-    padding-top: 90px;
+    padding-top: 135px;
     height: 225px;
   }
 
   .features__time-caption {
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 
   .features__time-text {
     line-height: 30px;
+    padding-bottom: 33px;
   }
 
   .features__timer {

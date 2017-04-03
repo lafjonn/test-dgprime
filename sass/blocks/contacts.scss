@@ -12,7 +12,7 @@
 .contacts__items-block {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 .contacts__heading {
@@ -29,7 +29,11 @@
   flex-direction: column;
   text-align: center;
   width: 240px;
-  padding-bottom: 20px;
+  padding-bottom: 27px;
+}
+
+.contacts__item--come {
+  padding-top: 8px;
 }
 
 .contacts__type {
@@ -42,6 +46,7 @@
   font-size: 24px;
   font-weight: 300;
   color: $pink;
+  padding-top: 3px;
 }
 
 .contacts__email:hover {
@@ -94,7 +99,7 @@
   }
 
   .contacts__item:last-child {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
 }
@@ -109,6 +114,7 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     width: 945px;
+    padding-top: 40px;
   }
 
   .contacts__heading {
@@ -126,6 +132,7 @@
     order: 1;
     padding-left: 0;
     margin-left: -5px;
+    padding-top: 8px;
   }
 
   .contacts__item--come {
@@ -136,5 +143,10 @@
     order: 3;
     padding-right: 0;
     margin-right: -5px;
+    padding-top: 8px;
+  }
+
+  .contacts__info {
+    padding-top: 5px;
   }
 }

@@ -64,6 +64,7 @@
     background-position: center;
     background-image: url(../img/bg-map-desktop@1x.jpg);
     margin-bottom: 30px;
+    margin-top: -2px;
     @media #{$retina} {
       background-image: url(../img/bg-map-desktop@2x.jpg);
       background-size: 1200px 976px;

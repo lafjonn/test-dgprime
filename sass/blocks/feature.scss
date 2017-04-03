@@ -5,8 +5,16 @@
   flex-direction: column;
   align-items: center;
   padding-top: 25px;
-  width: 300px;
   padding-bottom: 5px;
+}
+
+.feature--1,
+.feature--2 {
+  width: 281px;
+}
+
+.feature--3 {
+  width: 282px;
 }
 
 .feature__title {
@@ -25,10 +33,18 @@
 
   .feature {
     text-align: left;
-    width: 310px;
     align-items: stretch;
     padding-top: 31px;
     padding-bottom: 0;
+  }
+
+  .feature--1,
+  .feature--3 {
+    width: 310px;
+  }
+
+  .feature--2 {
+    width: 300px;
   }
 
   .feature__text {

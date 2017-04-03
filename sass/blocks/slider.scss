@@ -98,8 +98,8 @@
 }
 
 @media #{$desktop} {
-  .slider::after {
-    border-top: 95px solid #fff;
+  .slider::before {
+    border-top: 80px solid #fff;
   }
 
   .slider__nav {
@@ -114,5 +114,17 @@
   .slider__inner {
     width: 940px;
     margin: 0 auto;
+  }
+
+  .slider__arrow--prev {
+    left: 0;
+  }
+
+  .slider__inner {
+    display: none;
+  }
+
+  .slider__item {
+    padding-bottom: 38px;
   }
 }

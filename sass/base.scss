@@ -4,7 +4,10 @@ p, h1 {
 
 fieldset {
   margin: 0;
-  padding: 0;
+  padding: 0.35em 0.625em 0.75em;
+  @media #{$tablet} {
+    padding: 0;
+  }
 }
 
 .visually-hidden {
