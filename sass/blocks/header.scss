@@ -422,9 +422,11 @@
   .header__content {
     background-image: url(../img/iphone-hand-desktop@1x.png);
     height: 645px;
-    max-width: 1200px;
+    width: 960px;
     margin: 0 auto;
-    background-position: 100% 100%;
+    background-position: 33px 0;
+    padding-right: 20px;
+    padding-left: 0;
 
     @media #{$retina} {
       background-image: url(../img/iphone-hand-desktop@2x.png);
@@ -486,12 +488,12 @@
   }
 
   .header__slogan {
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 50px;
     font-weight: 300;
     height: 157px;
-    padding-bottom: 70px;
-    padding-left: 100px;
+    padding-bottom: 75px;
+    padding-left: 42px;
     line-height: 60px;
   }
 

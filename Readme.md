@@ -1,4 +1,5 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Готово к финальной проверке
 
 * Студент: [Светлана Шебашова](https://up.htmlacademy.ru/adaptive/10/user/253405).
 * Наставник: [Денис Байдаров] (https://htmlacademy.ru/profile/4er).

@@ -49,6 +49,10 @@
   padding-top: 3px;
 }
 
+.contacts__email {
+  text-decoration: none;
+}
+
 .contacts__email:hover {
   color: black;
   text-decoration: underline;
@@ -89,6 +93,10 @@
     padding-left: 5px;
   }
 
+  .contacts__item--come {
+    padding-top: 0;
+  }
+
   .contacts__item--write {
     padding-bottom: 0;
     padding-right: 7px;
@@ -100,6 +108,10 @@
 
   .contacts__item:last-child {
     padding-bottom: 30px;
+  }
+
+  .contacts__info {
+    padding-top: 10px;
   }
 
 }
