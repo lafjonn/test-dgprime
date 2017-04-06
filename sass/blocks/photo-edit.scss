@@ -137,7 +137,7 @@
 }
 
 .photo-edit__btn {
-  width: 280px;
+  min-width: 280px;
   margin: auto;
   box-sizing: border-box;
   margin-bottom: 15px;
@@ -269,7 +269,7 @@
   }
 
   .photo-edit__btn {
-    width: 260px;
+    min-width: 260px;
   }
 
 }
@@ -326,6 +326,7 @@
     justify-content: space-between;
     padding-left: 35px;
     padding-top: 64px;
+    flex-wrap: wrap;
   }
 
   .photo-edit__scale {
@@ -335,7 +336,7 @@
   }
 
   .photo-edit__btn {
-    width: 183px;
+    min-width: 183px;
     height: 52px;
     line-height: 15px;
     box-sizing: border-box;

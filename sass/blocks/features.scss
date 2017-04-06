@@ -1,5 +1,6 @@
 .features {
   background-color: $lightgrey;
+  margin-bottom: 9px;
 }
 
 .features__header {
@@ -159,7 +160,7 @@
 .features__time {
   display: none;
   width: 100%;
-  height: 395px;
+  min-height: 395px;
 }
 
 .features__time-caption {
@@ -185,14 +186,6 @@
   text-decoration: underline;
 }
 
-.features__br-desktop {
-  display: none;
-}
-
-.feature__br-tablet {
-  display: none;
-}
-
 @media #{$tablet} {
 
   .features__time {
@@ -208,10 +201,6 @@
 
   .features__caption--long {
     width: 100%;
-  }
-
-  .feature__br-tablet {
-    display: block;
   }
 
   .features__column-time {
@@ -262,7 +251,7 @@
     border: 14px solid $pink;
     border-radius: 50%;
     margin-top: 31px;
-    margin-left: 17px;
+    margin-left: 22px;
   }
 
   .features__time-content {
@@ -342,21 +331,21 @@
     width: 435px;
   }
 
+  .features__column {
+    align-items: flex-start;
+  }
+
   .features__watch {
     background-size: 298px auto;
     width: 298px;
     height: 345px;
-    margin-top: 0;
+    margin-top: 5px;
     margin-right: 65px;
     margin-left: 14px;
   }
 
   .features__image--pink-smile {
     margin-left: 0;
-  }
-
-  .features__br-tablet {
-    display: none;
   }
 
   .features__caption-part {
@@ -372,7 +361,7 @@
 
   .features__time {
     background-color: $lightgrey;
-    height: 430px;
+    min-height: 420px;
   }
 
   .features__time-content {
@@ -380,7 +369,8 @@
     padding-left: 0;
     margin-left: 0;
     padding-top: 135px;
-    height: 225px;
+    min-height: 225px;
+    padding-bottom: 30px;
   }
 
   .features__time-caption {
@@ -406,10 +396,6 @@
   .features__time-text,
   .features__time-link {
     font-size: 18px;
-  }
-
-  .features__br-desktop {
-    display: block;
   }
 
   .features__caption {

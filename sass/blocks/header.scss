@@ -158,7 +158,7 @@
   display: flex;
   background-color: $darkblue;
   &--small {
-    height: 236px;
+    min-height: 236px;
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 50px;
@@ -182,7 +182,7 @@
 .header__content {
   display: flex;
   width: 100%;
-  height: 557px;
+  min-height: 557px;
   flex-direction: column-reverse;
   align-self: flex-end;
   background-image: url(../img/iphone-hand-mobile@1x.png);
@@ -223,7 +223,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto,cover;
-  height: 730px;
+  min-height: 730px;
   width: 100%;
 
   @media #{$retina} {
@@ -236,7 +236,7 @@
 .header__slogan {
   display: none;
   width: 186px;
-  height: 126px;
+  min-height: 126px;
   font-size: 40px;
   font-weight: 300;
   color: $white;
@@ -273,7 +273,7 @@
   }
 
   .header__images--small {
-    height: 438px;
+    min-height: 438px;
   }
 
   .header__background-margin {
@@ -281,7 +281,7 @@
   }
 
   .header__images--large {
-    height: 728px;
+    min-height: 728px;
   }
 
   .header__wrapper {
@@ -304,9 +304,10 @@
     flex-wrap: wrap;
     background-image: url(../img/iphone-hand-tablet@1x.png);
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: 50% top;
     padding-left: 5%;
-    height: 630px;
+    min-height: 540px;
+    margin-top: 184px;
 
     @media #{$retina} {
       background-image: url(../img/iphone-hand-tablet@2x.png);
@@ -344,8 +345,8 @@
 
   .header__slogan {
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 32px;
+    padding-top: 12px;
+    padding-bottom: 10px;
     padding-left: 35px;
     line-height: 49px;
   }
@@ -374,7 +375,7 @@
 
   .header__images--large {
     background-image: url(../img/bg-back-desktop@1x.jpg);
-    height: 853px;
+    min-height: 853px;
 
     @media #{$retina} {
       background-image: url(../img/bg-back-desktop@2x.jpg);
@@ -410,7 +411,7 @@
   }
 
   .header__images--small {
-    height: 395px;
+    min-height: 395px;
     background-image: url(../img/bg-back-desktop@1x.jpg);
 
     @media #{$retina} {
@@ -421,12 +422,13 @@
 
   .header__content {
     background-image: url(../img/iphone-hand-desktop@1x.png);
-    height: 645px;
+    min-height: 645px;
     width: 960px;
     margin: 0 auto;
-    background-position: 33px 0;
+    background-position: 33px top;
     padding-right: 20px;
     padding-left: 0;
+    margin-top: 208px;
 
     @media #{$retina} {
       background-image: url(../img/iphone-hand-desktop@2x.png);
@@ -491,8 +493,8 @@
     padding-top: 10px;
     font-size: 50px;
     font-weight: 300;
-    height: 157px;
-    padding-bottom: 75px;
+    min-height: 157px;
+    padding-bottom: 50px;
     padding-left: 42px;
     line-height: 60px;
   }

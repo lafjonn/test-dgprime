@@ -65,8 +65,9 @@
   .download {
     background: transparent;
     width: 300px;
-    height: 290px;
+    height: 260px;
     padding-top: 20px;
+    padding-bottom: 0;
   }
 
   .download__description {
@@ -77,8 +78,8 @@
   }
 
   .download__phone-os {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     margin-left: 7px;
   }
 
@@ -104,14 +105,14 @@
 
   .download {
     margin-left: 18px;
-    height: 330px;
+    min-height: 290px;
     padding-top: 2px;
-    padding-bottom: 45px;
+    padding-bottom: 0;
   }
 
   .download__phone-os {
-    padding-top: 58px;
-    padding-bottom: 55px;
+    padding-top: 36px;
+    padding-bottom: 33px;
     margin-left: 0;
   }
 
