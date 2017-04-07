@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .review__name {
@@ -38,7 +38,7 @@
 
   .review {
     flex-direction: column-reverse;
-    padding-top: 25px;
+    padding-top: 15px;
   }
 
   .review__info {
@@ -69,6 +69,7 @@
     background-repeat: no-repeat;
     background-size: 79px auto;
     background-position: 50% 70px;
+    padding-top: 25px;
   }
 
   .review__quote {

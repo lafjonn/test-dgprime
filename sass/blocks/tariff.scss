@@ -234,7 +234,7 @@
 
   .tariff__feature {
     display: flex;
-    height: 46px;
+    min-height: 46px;
     padding-left: 13px;
     align-items: center;
     box-shadow: 0 0 0 2px $lightgrey;
@@ -317,7 +317,7 @@
 
   .tariff__feature {
     padding-left: 23px;
-    height: 60px;
+    min-height: 60px;
   }
 
   .tariff__price {
