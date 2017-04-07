@@ -130,12 +130,18 @@
   font-family: $font;
 }
 
+.contest__background-block--goals {
+  display: flex;
+  justify-content: center;
+}
+
 .contest__check-section {
   background-color: $lightgrey;
   display: flex;
   flex-direction: column;
   border: none;
-  margin: auto;
+  width: 320px;
+  margin: 0 20px 0 25px;
 }
 
 .contest__check-description {
@@ -145,11 +151,12 @@
   text-transform: uppercase;
   color: $pink;
   text-align: center;
-  min-width: 220px;
-  margin: auto;
+  width: 220px;
   padding-top: 38px;
   padding-bottom: 38px;
   display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .contest__subtitle {
@@ -178,6 +185,7 @@
   padding-top: 36px;
   display: flex;
   background-color: $white;
+  justify-content: center;
 }
 
 .contest__subtitle--white {
@@ -202,10 +210,11 @@
   background-color: $lightgrey;
   display: flex;
   width: 100%;
+  justify-content: center;
 }
 
 .contest__radio-label {
-  padding-left: 42px;
+  padding-left: 52px;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -369,7 +378,7 @@
   background-color: $white;
   box-shadow: 0 0 0 2px #e5e5e5;
   top: -2px;
-  left: -30px;
+  left: -18px;
 }
 
 .contest__radio + label:hover::before {
@@ -472,7 +481,6 @@
     border: 2px solid $grey;
     background-color: $white;
     width: 620px;
-    margin: auto;
   }
 
   .contest__input-connect {
@@ -636,6 +644,7 @@
 
   .contest {
     margin-bottom: 24px;
+    align-items: center;
   }
 
   .contest__description {
@@ -657,11 +666,10 @@
 
   .contest__form {
     width: 943px;
-    margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
@@ -671,7 +679,6 @@
 
   .contest__user-contacts--name{
     width: 437px;
-    margin-right: auto;
     justify-content: space-between;
     padding-top: 20px;
     margin-bottom: -5px;
@@ -686,11 +693,11 @@
 
   .contest__checkbox-label {
     padding-top: 0px;
-    padding-left: 121px;
+    padding-left: 118px;
   }
 
   .contest__checkbox + label::before {
-    left: 62px;
+    left: 59px;
     top: -3px;
   }
 
@@ -798,14 +805,14 @@
   .contest__checkbox-item {
     padding-top: 0;
     padding-bottom: 0;
-    margin-top: 10px;
-    margin-bottom: -7px;
+    margin-top: 8px;
+    margin-bottom: 0;
   }
 
   .contest__chechbox-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 
   .contest__user-text {
