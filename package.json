@@ -1,10 +1,10 @@
 {
-  "name": "pink",
+  "name": "projects",
   "version": "0.1.0",
+  "author": "lafjonn",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "lafjonn projects",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.7.x",
     "browser-sync": "2.18.8",
     "css-mqpacker": "^5.0.1",
@@ -22,18 +22,9 @@
     "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "editorconfig-cli",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
-  "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "js/**/*.js",
-    "img/**/*.svg",
-    "sass/**/*.{sass,scss}"
-  ],
   "engines": {
     "node": "6.10"
   }

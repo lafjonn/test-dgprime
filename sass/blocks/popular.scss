@@ -1,0 +1,77 @@
+.popular {
+  width: 283px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid #f2f2f2;
+}
+
+.popular__flag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: $red;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.popular__description {
+  font-size: 16px;
+  font-weight: 300;
+  width: 200px;
+  line-height: 24px;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.popular__buttons {
+  display: flex;
+}
+
+.popular__like {
+  width: 50%;
+  background-color: $white;
+  border-top: 1px solid #f2f2f2;
+  border-left: none;
+  border-bottom: none;
+  border-right: 1px solid #f2f2f2;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.popular__like-img {
+  margin-top: -5px;
+}
+
+.popular__info {
+  width: 50%;
+  background-color: $white;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $red;
+  text-decoration: none;
+  line-height: 50px;
+  text-align: center;
+}
+
+.popular__info:active {
+  opacity: 0.8;
+}

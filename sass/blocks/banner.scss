@@ -1,0 +1,39 @@
+.banner {
+  width: 100%;
+  background-color: #fcebda;
+}
+
+.banner__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(../../img/banner-bg.jpg);
+  background-position: center;
+  padding-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.banner__slogan-block {
+  max-width: 571px;
+  line-height: 43px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.banner__slogan {
+  background: $red;
+  color: $white;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  display: inline;
+  box-shadow: -20px 0 $red, 20px 0 $red;
+}
+
+.banner__search {
+  margin-top: 35px;
+}
